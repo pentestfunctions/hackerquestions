@@ -1,0 +1,818 @@
+[
+    {
+        "question": "What is a CPU?",
+        "options": [
+            "Central Processing Unit - the primary component that processes instructions in a computer",
+            "Computer Power Unit - the component that supplies power to the computer",
+            "Central Program Utility - software that manages computer resources",
+            "Core Processing Utility - a tool for monitoring computer performance"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The CPU (Central Processing Unit) is the primary component of a computer that processes instructions from programs. It performs arithmetic, logic, and input/output operations specified by program instructions. Often referred to as the 'brain' of the computer, it executes most of the calculations that make a computer function.",
+        "weight": 1
+    },
+    {
+        "question": "Why is thermal paste used in CPU installation?",
+        "options": [
+            "To lubricate the CPU socket for easier installation",
+            "To create an electrical connection between the CPU and motherboard",
+            "To fill microscopic imperfections and improve heat transfer between the CPU and heatsink",
+            "To prevent dust from entering the CPU socket"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Thermal paste is used to fill microscopic air gaps and imperfections between the CPU surface and the heatsink. These gaps would otherwise act as insulators. The paste, which has much better thermal conductivity than air, ensures efficient heat transfer from the CPU to the cooling solution, preventing overheating and potential damage.",
+        "weight": 1
+    },
+    {
+        "question": "What is the difference between LGA and PGA CPU sockets?",
+        "options": [
+            "LGA has pins on the motherboard, while PGA has pins on the CPU",
+            "LGA is for Intel processors, while PGA is exclusively for AMD",
+            "LGA provides higher power delivery, while PGA offers better cooling",
+            "LGA is for desktop computers, while PGA is for laptops only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "In Land Grid Array (LGA) sockets, the pins are on the motherboard socket, while the CPU has flat contact points. In Pin Grid Array (PGA) sockets, the pins are on the CPU itself, while the motherboard has holes for these pins. This is a key architectural difference between many Intel CPUs (typically LGA) and AMD CPUs (many use PGA, though this has changed with newer generations).",
+        "weight": 1
+    },
+    {
+        "question": "What is a GPU?",
+        "options": [
+            "General Processing Unit - a secondary CPU for multitasking",
+            "Graphics Processing Unit - specialized for processing visual data and rendering images",
+            "Grand Power Unit - responsible for power management in high-end systems",
+            "Global Processing Utility - software for managing international data transfers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A GPU (Graphics Processing Unit) is specialized for processing visual data and rendering images, videos, and animations. While CPUs are designed for sequential processing with few cores, GPUs have thousands of smaller cores designed for handling multiple operations simultaneously, making them ideal for graphics rendering and certain types of parallel computing tasks.",
+        "weight": 1
+    },
+    {
+        "question": "What is the main difference between integrated and dedicated GPUs?",
+        "options": [
+            "Integrated GPUs are faster than dedicated GPUs",
+            "Integrated GPUs are built into the CPU or motherboard, while dedicated GPUs are separate components",
+            "Integrated GPUs use more power than dedicated GPUs",
+            "Integrated GPUs have more VRAM than dedicated GPUs"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Integrated GPUs are built into the CPU or motherboard and share system memory (RAM) with the CPU. Dedicated GPUs are separate components with their own processor and dedicated video memory (VRAM). Dedicated GPUs generally offer significantly better performance for graphics-intensive tasks but consume more power and generate more heat.",
+        "weight": 1
+    },
+    {
+        "question": "Which of the following is typically true of professional GPUs compared to gaming GPUs?",
+        "options": [
+            "Professional GPUs focus on raw frame rates and gaming performance",
+            "Professional GPUs are always slower but more power-efficient",
+            "Professional GPUs prioritize precision, reliability, and specific professional software certifications",
+            "Professional GPUs are typically less expensive than gaming GPUs"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Professional GPUs (like NVIDIA Quadro or AMD Radeon Pro) are designed for workstation applications and prioritize precision, reliability, and certified performance in professional software (CAD, 3D modeling, video editing). They often have ECC memory for error correction and specialized drivers. Gaming GPUs prioritize high frame rates and visual effects in games, sometimes at the expense of computational precision.",
+        "weight": 1
+    },
+    {
+        "question": "What is RAM?",
+        "options": [
+            "Random Access Memory - temporary, volatile memory used to store data that the CPU is actively using",
+            "Readily Available Memory - permanent storage for the operating system",
+            "Read-Access Module - hardware that controls how data is read from the hard drive",
+            "Runtime Application Memory - software that allocates memory to running programs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "RAM (Random Access Memory) is volatile, temporary memory that stores data the CPU is actively working on. Unlike storage (HDD/SSD), RAM loses its data when power is turned off. It provides fast read/write access to any memory cell directly (hence 'random access'), allowing the CPU to quickly access program instructions and data while the computer is running.",
+        "weight": 1
+    },
+    {
+        "question": "What is the difference between RAM and storage memory?",
+        "options": [
+            "RAM is slower but has more capacity than storage memory",
+            "RAM is non-volatile while storage memory is volatile",
+            "RAM is temporary, volatile memory for active tasks while storage memory is permanent, non-volatile memory for long-term data retention",
+            "RAM is used exclusively for graphics while storage memory is used for everything else"
+        ],
+        "correctAnswer": 2,
+        "explanation": "RAM is volatile (temporary) memory that loses data when power is turned off, used for storing active programs and data the CPU is currently working with. Storage memory (like SSDs or HDDs) is non-volatile (permanent) and retains data even without power, used for long-term data storage. RAM is significantly faster but typically has much less capacity than storage devices.",
+        "weight": 1
+    },
+    {
+        "question": "Which of the following statements about RAM frequency and latency is true?",
+        "options": [
+            "Higher frequency always guarantees better RAM performance regardless of latency",
+            "Latency is measured in gigahertz (GHz) while frequency is measured in nanoseconds (ns)",
+            "Frequency indicates how many operations RAM can perform per second, while latency indicates the delay before a data transfer begins",
+            "RAM with lower frequency but better latency is always faster than RAM with higher frequency"
+        ],
+        "correctAnswer": 2,
+        "explanation": "RAM frequency (measured in MHz) indicates how many clock cycles the RAM can perform per second - higher is generally better. Latency (measured in clock cycles, often expressed as CL value) indicates the delay between when the RAM receives a command and when it begins executing it - lower is better. Both factors affect performance, and the best performance comes from balancing both, not just maximizing one metric.",
+        "weight": 1
+    },
+    {
+        "question": "What happens when you mix RAM sticks of different frequencies in the same system?",
+        "options": [
+            "The system won't boot at all",
+            "All RAM will operate at the speed of the fastest stick",
+            "All RAM will typically operate at the speed of the slowest stick",
+            "Each stick will run at its own native frequency independently"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When RAM sticks with different frequencies are installed in the same system, they will typically all operate at the speed of the slowest stick. This is because the memory controller needs to establish a consistent timing for all RAM modules. While the system will usually function, this means faster RAM is effectively underclocked to match the slowest module, reducing potential performance.",
+        "weight": 1
+    },
+    {
+        "question": "What is a PSU in a computer system?",
+        "options": [
+            "Processing System Unit - another term for the CPU",
+            "Power Supply Unit - the component that converts AC power from the wall outlet into DC power for computer components",
+            "Peripheral System Utility - software for managing external devices",
+            "Primary Storage Unit - the main hard drive in a computer"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A PSU (Power Supply Unit) is the component that converts alternating current (AC) from a wall outlet into direct current (DC) at various voltages required by computer components. It supplies stable, filtered power to all parts of the computer and is crucial for system stability and performance.",
+        "weight": 1
+    },
+    {
+        "question": "What do the 80 Plus Bronze, Silver, Gold, Platinum, and Titanium certifications indicate about a PSU?",
+        "options": [
+            "The maximum wattage the PSU can deliver",
+            "The warranty period offered by the manufacturer",
+            "The energy efficiency of the PSU at different load percentages",
+            "The physical size and form factor of the PSU"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The 80 Plus certification (Bronze, Silver, Gold, Platinum, and Titanium) indicates the energy efficiency of a power supply at different load percentages (typically 20%, 50%, and 100% load). Higher tier certifications mean the PSU wastes less electricity as heat during power conversion. For example, an 80 Plus Gold PSU must be at least 87% efficient at 50% load, while a Bronze only needs to be 85% efficient at the same load.",
+        "weight": 1
+    },
+    {
+        "question": "What is the difference between modular and non-modular PSUs?",
+        "options": [
+            "Modular PSUs can vary their power output, while non-modular PSUs deliver fixed wattage",
+            "Modular PSUs have detachable cables, while non-modular PSUs have fixed cables",
+            "Modular PSUs work with all motherboard types, while non-modular PSUs are limited to specific models",
+            "Modular PSUs are external to the computer case, while non-modular PSUs are mounted internally"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Modular PSUs have detachable power cables that can be connected as needed, allowing users to install only the cables their system requires. This reduces cable clutter, improves airflow, and makes cable management easier. Non-modular PSUs have all cables permanently attached, which can create cable management challenges but may offer cost savings and slightly better electrical connections.",
+        "weight": 1
+    },
+    {
+        "question": "What are I/O devices in computing?",
+        "options": [
+            "Internal/Operational devices that manage the computer's core functions",
+            "Input/Output devices that allow users to send data to and receive data from a computer",
+            "Imaging/Optical devices used only for visual processing",
+            "Internet/Online devices that connect to the web"
+        ],
+        "correctAnswer": 1,
+        "explanation": "I/O (Input/Output) devices are hardware components that allow users to communicate with a computer. Input devices (like keyboards, mice, scanners) send data to the computer, while output devices (like monitors, printers, speakers) deliver data from the computer to the user. These devices form the interface between humans and computers.",
+        "weight": 1
+    },
+    {
+        "question": "What is the primary difference between air cooling and liquid cooling for a CPU?",
+        "options": [
+            "Air cooling is more expensive but more efficient than liquid cooling",
+            "Air cooling uses fans and heatsinks, while liquid cooling uses a coolant to transfer heat away from components",
+            "Air cooling is only suitable for overclocked systems",
+            "Liquid cooling is maintenance-free, while air cooling requires regular maintenance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Air cooling uses metal heatsinks and fans to dissipate heat from components, while liquid cooling uses a liquid coolant that circulates through a closed loop to transfer heat away to a radiator where it's dissipated by fans. Liquid cooling is typically more efficient at heat removal, allowing for lower temperatures or higher overclocks, but is usually more expensive and complex to install than air cooling solutions.",
+        "weight": 1
+    },
+    {
+        "question": "What temperature range is typically considered normal for a CPU under load?",
+        "options": [
+            "10-30°C (50-86°F)",
+            "30-50°C (86-122°F)",
+            "60-85°C (140-185°F)",
+            "90-100°C (194-212°F)"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Under heavy load, most modern CPUs typically operate safely in the 60-85°C (140-185°F) range. The exact safe range varies by processor model and manufacturer. Temperatures above 90°C are generally considered too hot and may cause thermal throttling (performance reduction) or long-term damage. Idle temperatures are usually much lower, typically in the 30-50°C range depending on ambient temperature and cooling solution.",
+        "weight": 1
+    },
+    {
+        "question": "What is the main difference between HDD and SSD storage?",
+        "options": [
+            "HDDs store more data while SSDs are only for the operating system",
+            "HDDs use optical technology while SSDs use magnetic storage",
+            "HDDs use mechanical moving parts while SSDs use flash memory with no moving parts",
+            "HDDs are external drives while SSDs are always internal"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hard Disk Drives (HDDs) use mechanical spinning platters and a moving read/write head to store data magnetically. Solid State Drives (SSDs) have no moving parts and instead use flash memory chips to store data electronically. This fundamental difference makes SSDs significantly faster, more durable, and more energy-efficient, while HDDs typically offer more storage capacity per dollar.",
+        "weight": 1
+    },
+    {
+        "question": "What is NVMe in computer storage?",
+        "options": [
+            "A type of hard drive with increased durability",
+            "A protocol designed to accelerate the transfer speed of SSD storage by using PCIe lanes",
+            "A file system optimized for flash memory",
+            "A brand of storage devices made by Western Digital"
+        ],
+        "correctAnswer": 1,
+        "explanation": "NVMe (Non-Volatile Memory Express) is a host controller interface and storage protocol designed specifically for SSDs. Unlike older protocols like SATA that were designed for mechanical hard drives, NVMe is optimized for the low-latency, parallel nature of SSDs and connects directly to the CPU via PCIe lanes. This allows for significantly faster data transfer speeds, reduced latency, and higher IOPS (Input/Output Operations Per Second).",
+        "weight": 1
+    },
+    {
+        "question": "What does RAID 1 configuration do for storage?",
+        "options": [
+            "Stripes data across multiple drives to increase performance",
+            "Mirrors data across drives for redundancy",
+            "Combines the benefits of striping and mirroring",
+            "Distributes parity information across drives"
+        ],
+        "correctAnswer": 1,
+        "explanation": "RAID 1 (Redundant Array of Independent Disks level 1) implements mirroring, where identical data is written to two or more drives simultaneously. This creates an exact copy or mirror of a data set on multiple drives. RAID 1 provides excellent fault tolerance as all data remains available if one drive fails. However, it reduces usable capacity to 50% of the total drive capacity and doesn't improve write performance.",
+        "weight": 1
+    },
+    {
+        "question": "What are PCIe lanes in a computer system?",
+        "options": [
+            "Physical spaces in a computer case for installing components",
+            "Paths for RGB lighting to travel through the motherboard",
+            "Data connection channels between the CPU and PCIe devices like GPUs and NVMe drives",
+            "Cooling channels that direct airflow through the system"
+        ],
+        "correctAnswer": 2,
+        "explanation": "PCIe (Peripheral Component Interconnect Express) lanes are point-to-point serial connections that serve as data pathways between the CPU and PCIe devices. Each lane consists of two pairs of wires - one for sending and one for receiving data. The number of lanes available is limited by the CPU and motherboard, and they must be allocated among various devices (GPUs, NVMe drives, network cards, etc.) that need PCIe connectivity.",
+        "weight": 1
+    },
+    {
+        "question": "How do PCIe generations (e.g., PCIe 3.0 vs. 4.0) differ?",
+        "options": [
+            "They support different types of devices",
+            "They change the physical size of the PCIe slots",
+            "Each new generation doubles the data transfer rate per lane",
+            "Newer generations use fewer lanes for the same devices"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Each PCIe generation approximately doubles the bandwidth per lane compared to the previous generation. For example, PCIe 3.0 provides about 985 MB/s per lane, PCIe 4.0 offers 1.97 GB/s per lane, and PCIe 5.0 delivers around 3.94 GB/s per lane. This means devices can achieve higher performance with the same number of lanes, or maintain performance while using fewer lanes, when connected to newer PCIe generations.",
+        "weight": 1
+    },
+    {
+        "question": "What happens when you install a graphics card in a PCIe x16 slot that's wired for only x8 lanes?",
+        "options": [
+            "The GPU won't work at all",
+            "The system will crash due to insufficient bandwidth",
+            "The GPU will work but with potentially reduced performance in bandwidth-intensive tasks",
+            "The motherboard will automatically convert the connection to use 16 lanes"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When a GPU is installed in a PCIe slot that's physically x16 but electrically wired for only x8 lanes, the card will still function but with reduced bandwidth. For many gaming and general use cases, the performance difference is minimal or unnoticeable. However, in bandwidth-intensive applications or with very high-end GPUs, there may be a measurable performance reduction. Modern motherboards often allocate lanes differently when multiple PCIe devices are installed.",
+        "weight": 1
+    },
+    {
+        "question": "What is a DAC in the context of computer audio peripherals?",
+        "options": [
+            "Direct Audio Connection - a standard for connecting speakers",
+            "Digital-to-Analog Converter - a device that converts digital audio signals to analog signals",
+            "Dynamic Audio Controller - software for managing audio settings",
+            "Dual Audio Channel - a feature allowing audio to play through two devices simultaneously"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A DAC (Digital-to-Analog Converter) is a device that converts digital audio signals (stored as 0s and 1s) into analog signals that can drive headphones or speakers. While all computers have a basic built-in DAC, external or higher-quality DACs can provide better sound quality by offering more accurate conversion, better components, lower noise, and better amplification for high-impedance headphones.",
+        "weight": 1
+    },
+    {
+        "question": "When connecting a front panel USB port to the motherboard, what is the primary difference between USB 2.0 and USB 3.0 headers?",
+        "options": [
+            "USB 3.0 headers are blue while USB 2.0 headers are black",
+            "USB 3.0 headers have more pins and a different shape than USB 2.0 headers",
+            "USB 3.0 headers are always located at the edge of the motherboard",
+            "USB 3.0 headers only work with specific brands of cases"
+        ],
+        "correctAnswer": 1,
+        "explanation": "USB 3.0 headers on motherboards have 19 pins arranged in a 2×10 formation (with one pin missing), while USB 2.0 headers have 9 pins in a 2×5 formation. They also have different physical shapes and are not interchangeable. USB 3.0 headers support higher data transfer rates (up to 5 Gbps compared to USB 2.0's 480 Mbps) and typically provide more power to connected devices.",
+        "weight": 1
+    },
+    {
+        "question": "What does the refresh rate (measured in Hz) indicate on a monitor?",
+        "options": [
+            "How many minutes before the screen needs to be turned off to prevent burn-in",
+            "How many pixels are refreshed when the image changes",
+            "How many times per second the display updates with a new image",
+            "The maximum brightness level the monitor can achieve"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A monitor's refresh rate, measured in Hertz (Hz), indicates how many times per second the display updates with a new image. Higher refresh rates (e.g., 144Hz or 240Hz compared to the standard 60Hz) result in smoother motion, reduced motion blur, and can be particularly beneficial for fast-paced gaming. To take advantage of high refresh rates, both the monitor and the graphics card must support them, and the system must be capable of generating frames at that rate.",
+        "weight": 1
+    },
+    {
+        "question": "What is the BIOS in a computer system?",
+        "options": [
+            "Basic Input/Output System - firmware that initializes hardware during boot and provides runtime services",
+            "Binary Internal Operating System - a simplified OS that runs before Windows loads",
+            "Built-In Operating Software - a program that manages hardware drivers",
+            "Background Input/Output Sequences - processes that run in the background to manage hardware"
+        ],
+        "correctAnswer": 0,
+        "explanation": "BIOS (Basic Input/Output System) is firmware stored on a chip on the motherboard that performs the POST (Power-On Self Test), initializes and tests hardware components, and provides runtime services for operating systems and programs. It's the first software to run when a computer is powered on, controlling the computer until the operating system takes over.",
+        "weight": 1
+    },
+    {
+        "question": "What is the main difference between BIOS and UEFI?",
+        "options": [
+            "BIOS is for Windows computers while UEFI is for Macs",
+            "BIOS can only boot from drives up to 2TB while UEFI supports larger drives and offers more features like Secure Boot",
+            "UEFI is older technology that has been replaced by BIOS in modern systems",
+            "BIOS has a graphical interface while UEFI uses only text commands"
+        ],
+        "correctAnswer": 1,
+        "explanation": "UEFI (Unified Extensible Firmware Interface) is a modern replacement for the legacy BIOS. Key advantages of UEFI include support for boot drives larger than 2.2TB, faster boot times, CPU-independent architecture, better security features (like Secure Boot), a graphical interface with mouse support, networking capabilities, and more extensive hardware support. Most modern systems use UEFI, though they often include a 'Legacy BIOS' mode for compatibility.",
+        "weight": 1
+    },
+    {
+        "question": "What is the POST process in computer startup?",
+        "options": [
+            "Preparing Operating System Technology - loading essential OS files",
+            "Power-On Self Test - checking hardware components before loading the OS",
+            "Primary OS Setup Tool - configuring the operating system on first boot",
+            "Personal Operating System Tuner - optimizing the OS for the specific hardware"
+        ],
+        "correctAnswer": 1,
+        "explanation": "POST (Power-On Self Test) is a diagnostic testing sequence run by firmware (BIOS/UEFI) when the computer is powered on. It checks if the essential hardware components (CPU, RAM, storage devices, etc.) are present and functioning correctly. If the POST detects a critical hardware failure, it may display an error message, emit beep codes, or prevent the system from booting. Once POST completes successfully, the system proceeds to load the operating system.",
+        "weight": 1
+    },
+    {
+        "question": "What does the Cat number (e.g., Cat5e, Cat6, Cat7) represent in Ethernet cables?",
+        "options": [
+            "The cable's diameter in millimeters",
+            "The maximum length the cable can be",
+            "The category of specification, indicating performance characteristics like maximum data rate and frequency",
+            "The number of wires inside the cable"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The 'Cat' (Category) number in Ethernet cables indicates the specifications to which the cable was manufactured, defining characteristics like data transmission speed, bandwidth, and frequency handling. For example, Cat5e supports up to 1 Gbps speeds and 100 MHz frequency, Cat6 supports up to 10 Gbps for limited distances and 250 MHz, while Cat6a and higher categories offer improved specifications for speed, distance, and crosstalk resistance.",
+        "weight": 1
+    },
+    {
+        "question": "What is the main advantage of USB-C over previous USB connectors?",
+        "options": [
+            "It's waterproof, making it safer for outdoor use",
+            "It's reversible and can support multiple protocols including power delivery, data, and video",
+            "It's made of more durable materials that won't break as easily",
+            "It can be bent at sharp angles without damaging the cable"
+        ],
+        "correctAnswer": 1,
+        "explanation": "USB-C offers several advantages over previous USB connectors: it's reversible (can be plugged in either way up), supports higher power delivery (up to 100W), faster data transfer (up to 40 Gbps with Thunderbolt compatibility), can carry video signals (replacing HDMI in some cases), and uses a single connector type for both ends of the cable. This versatility makes it increasingly common as a universal connector for many devices.",
+        "weight": 1
+    },
+    {
+        "question": "What is the difference between HDMI and DisplayPort for monitor connections?",
+        "options": [
+            "HDMI is analog while DisplayPort is digital",
+            "HDMI is primarily for consumer electronics while DisplayPort was designed for computer monitors and offers some technical advantages",
+            "DisplayPort can only carry video while HDMI carries both audio and video",
+            "HDMI is a newer standard that has replaced DisplayPort"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Both HDMI and DisplayPort carry digital audio and video signals, but they were developed for different purposes. HDMI was designed for consumer electronics and home entertainment, while DisplayPort was developed specifically for computer displays. DisplayPort often offers technical advantages for PC users, including higher refresh rates at high resolutions, better daisy-chaining support, and in some implementations, higher bandwidth. HDMI is more widespread in TVs and entertainment devices.",
+        "weight": 1
+    },
+    {
+        "question": "What is the difference between a bit and a byte?",
+        "options": [
+            "They are two different terms for the same unit",
+            "A bit is a single binary digit (0 or 1) while a byte is typically 8 bits",
+            "A bit is used in network speeds while a byte is only used for storage",
+            "A bit is outdated terminology that has been replaced by the byte"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A bit (binary digit) is the smallest unit of data in computing, representing a single binary value of either 0 or 1. A byte consists of 8 bits grouped together, capable of representing 256 different values (2^8). Bytes are commonly used to represent characters, while storage capacities are typically measured in bytes and their multiples (KB, MB, GB). Network speeds are often measured in bits per second (bps), which can sometimes cause confusion.",
+        "weight": 1
+    },
+    {
+        "question": "What is the correct definition of a gigabyte (GB)?",
+        "options": [
+            "Exactly 1000 megabytes",
+            "Exactly 1024 megabytes",
+            "1000 megabytes in decimal notation (used by storage manufacturers) or 1024 megabytes in binary notation (used in computing contexts)",
+            "A unit only used for RAM, not for storage"
+        ],
+        "correctAnswer": 2,
+        "explanation": "There are two definitions of gigabyte in common use: the decimal definition (1 GB = 1,000,000,000 bytes = 1000 MB) used by storage manufacturers and the binary definition (1 GiB = 1,073,741,824 bytes = 1024 MiB) typically used in computing and memory contexts. This discrepancy explains why a '1TB' hard drive shows less capacity in your operating system than expected. Technically, the binary version should be called a gibibyte (GiB), but many operating systems still display it as GB.",
+        "weight": 1
+    },
+    {
+        "question": "Which number system is commonly used for representing memory addresses in computing?",
+        "options": [
+            "Decimal (base 10)",
+            "Binary (base 2)",
+            "Hexadecimal (base 16)",
+            "Octal (base 8)"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hexadecimal (base 16) is commonly used to represent memory addresses and other binary values in computing because it provides a more compact and human-readable way to represent binary data. Each hexadecimal digit represents 4 binary digits (bits), making conversion between binary and hexadecimal straightforward. Memory dumps, color codes, MAC addresses, and machine code are often represented in hexadecimal notation.",
+        "weight": 1
+    },
+    {
+        "question": "What is computer benchmarking?",
+        "options": [
+            "The process of setting up a computer on a desk or bench",
+            "Comparing a computer's performance against a standard or other computers through standardized tests",
+            "Marking the location of components before disassembly",
+            "Calibrating a monitor's display settings"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Benchmarking is the process of measuring a computer's performance using standardized tests or software. These tests provide quantifiable metrics that allow for objective comparison between different systems or components. Benchmarks can test specific components (like CPU, GPU, or storage) or overall system performance in real-world scenarios like gaming, content creation, or general productivity tasks.",
+        "weight": 1
+    },
+    {
+        "question": "Why is stress testing important when evaluating a computer system?",
+        "options": [
+            "It identifies the physical breaking point of components",
+            "It's required for warranty validation",
+            "It reveals performance under heavy loads and potential stability issues or thermal throttling",
+            "It shows how the computer performs when used on an unstable surface"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Stress testing pushes hardware components to their limits to evaluate performance under maximum load, thermal behavior, stability, and power consumption. This is crucial for identifying issues that might not appear during normal use, such as inadequate cooling leading to thermal throttling, unstable overclocks, or power delivery problems. Stress tests help ensure a system will remain stable even during the most demanding workloads.",
+        "weight": 1
+    },
+    {
+        "question": "What information does CPU-Z software provide?",
+        "options": [
+            "It only measures CPU temperature",
+            "It optimizes CPU performance automatically",
+            "It provides detailed information about the CPU, motherboard, memory, and other system components",
+            "It's an overclocking tool that increases CPU frequency"
+        ],
+        "correctAnswer": 2,
+        "explanation": "CPU-Z is a system information utility that provides detailed information about a computer's hardware components. It displays specifications of the CPU (model, codename, process, package, cache levels), motherboard (manufacturer, model, chipset, BIOS), memory (size, type, timings, SPD), and graphics card. While it doesn't perform benchmarks itself, it's valuable for identifying exact hardware specifications and validating settings like memory timings or CPU frequencies.",
+        "weight": 1
+    },
+    {
+        "question": "What tool is essential for checking component compatibility when building a computer?",
+        "options": [
+            "CPU-Z or similar system information utilities",
+            "PCPartPicker or similar compatibility checking websites",
+            "Windows Device Manager",
+            "BIOS configuration utility"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Websites like PCPartPicker are invaluable when planning a PC build as they automatically check for compatibility issues between components. They verify that the chosen CPU is compatible with the motherboard socket, that the RAM type and speed are supported, that the case can fit the motherboard form factor and GPU length, and that the power supply has sufficient wattage and the correct connectors for all components.",
+        "weight": 1
+    },
+    {
+        "question": "When installing a CPU into a motherboard, what should you NEVER do?",
+        "options": [
+            "Apply thermal paste to the CPU",
+            "Use the alignment markers to ensure correct orientation",
+            "Force the CPU into the socket if it doesn't fit easily",
+            "Touch the motherboard's back plate"
+        ],
+        "correctAnswer": 2,
+        "explanation": "CPUs are precisely designed to fit into their sockets in only one orientation. Forcing a CPU can permanently damage both the delicate pins (in PGA sockets) or the contacts (in LGA sockets) and the socket itself. Modern CPUs have alignment markers (usually triangles or notches) that must be matched with corresponding markers on the socket to ensure correct orientation. The CPU should drop into place with minimal or no force when properly aligned.",
+        "weight": 1
+    },
+    {
+        "question": "What is typically the first component that should be installed when building a computer from scratch?",
+        "options": [
+            "The power supply",
+            "The CPU and its cooler",
+            "The RAM modules",
+            "The graphics card"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The CPU and its cooler are typically installed first when building a computer. Installing the CPU before the motherboard is placed in the case provides better access and visibility. Many CPU coolers require access to the back of the motherboard for mounting brackets, which becomes difficult or impossible once the motherboard is installed in the case. Other components like RAM and the GPU are generally easier to install with the motherboard outside the case as well.",
+        "weight": 1
+    },
+    {
+        "question": "When replacing a laptop CD/DVD drive with a secondary hard drive, what additional component is typically required?",
+        "options": [
+            "A RAID controller",
+            "A caddy adapter that converts the optical drive bay to accept a hard drive",
+            "A custom firmware update for the laptop",
+            "An external enclosure for the original optical drive"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Many laptops allow replacing the optical drive with a secondary storage drive using a caddy adapter. This adapter matches the form factor and connector of the optical drive bay but provides a mounting mechanism and interface for a 2.5\" HDD or SSD. It's a popular upgrade for increasing storage capacity in laptops that have accessible optical drive bays, especially as optical media becomes less commonly used.",
+        "weight": 1
+    },
+    {
+        "question": "What is the main difference between LCD and OLED display technologies?",
+        "options": [
+            "LCD displays are flat while OLED displays are curved",
+            "LCD displays use a backlight to illuminate pixels, while OLED pixels generate their own light",
+            "LCD is a newer technology that has replaced OLED",
+            "LCD displays have higher resolution than OLED displays"
+        ],
+        "correctAnswer": 1,
+        "explanation": "LCD (Liquid Crystal Display) technology uses a backlight (typically LED in modern displays) that shines through liquid crystals to create images. OLED (Organic Light Emitting Diode) technology has pixels that generate their own light when electricity is applied, allowing each pixel to be turned completely off. This fundamental difference gives OLED displays perfect blacks, better contrast ratios, and wider viewing angles, while LCDs typically offer higher brightness and better longevity.",
+        "weight": 1
+    },
+    {
+        "question": "What is a digitizer in the context of display technology?",
+        "options": [
+            "A device that converts analog video signals to digital",
+            "Software that enhances digital image quality",
+            "A component that detects and tracks touch input on a screen",
+            "A tool for calibrating monitor color accuracy"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A digitizer is the component in touch-enabled displays that detects and tracks touch input. It converts the physical touch position into digital coordinates that the device can interpret. Digitizers can use various technologies including resistive (pressure-sensitive), capacitive (electrical charge), electromagnetic resonance (for stylus input), or infrared to detect touches. Most modern smartphones and tablets use capacitive digitizers, which are more responsive and support multi-touch gestures.",
+        "weight": 1
+    },
+    {
+        "question": "What advantage does an LED-backlit LCD have over older CCFL-backlit LCDs?",
+        "options": [
+            "LED backlights produce more accurate colors",
+            "LED backlights allow for higher resolution displays",
+            "LED backlights consume less power, are thinner, and have longer lifespans",
+            "LED backlights eliminate the need for liquid crystals"
+        ],
+        "correctAnswer": 2,
+        "explanation": "LED (Light Emitting Diode) backlights offer several advantages over older CCFL (Cold Cathode Fluorescent Lamp) backlights in LCD displays: they're more energy-efficient, enabling thinner and lighter displays; they have longer lifespans; they don't contain mercury; they reach full brightness instantly; and they enable features like local dimming for better contrast. Note that LED-backlit LCDs still use liquid crystals - only the backlight technology has changed.",
+        "weight": 1
+    },
+    {
+        "question": "What is a device driver in computing?",
+        "options": [
+            "Software that allows the operating system to communicate with hardware devices",
+            "Hardware that controls the flow of data between components",
+            "The person responsible for transporting computer equipment",
+            "An application that improves device performance"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A device driver is software that acts as a translator between the operating system and a hardware device. It converts general commands from the OS into specific instructions that the hardware can understand. Drivers are specific to both the device and the operating system, which is why the same hardware needs different drivers for Windows, macOS, or Linux.",
+        "weight": 1
+    },
+    {
+        "question": "What is the Windows utility used to view and manage device drivers?",
+        "options": [
+            "Control Panel",
+            "Device Manager (devmgmt.msc)",
+            "Task Manager",
+            "Driver Control Center"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Device Manager (accessible via devmgmt.msc) is the Windows utility for viewing and managing hardware devices and their drivers. It displays all hardware categories and specific devices, indicates problems with yellow exclamation marks, allows for driver updates, enables/disables devices, shows device properties including driver details, and provides hardware ID information for troubleshooting.",
+        "weight": 1
+    },
+    {
+        "question": "What is the best practice for keeping device drivers updated?",
+        "options": [
+            "Never update drivers unless the device isn't working",
+            "Always download drivers from third-party driver update utilities",
+            "Get drivers directly from the device manufacturer's website or through Windows Update for verified drivers",
+            "Update all drivers weekly regardless of need"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The best practice for driver updates is to get them directly from the device manufacturer's official website or through Windows Update, which provides Microsoft-verified drivers. Manufacturer websites provide the most up-to-date and properly tested drivers specific to your device. Third-party driver utilities often install incorrect, outdated, or potentially harmful drivers. It's generally best to update drivers when there's a specific reason (fixing issues, adding features, security updates) rather than updating arbitrarily.",
+        "weight": 1
+    },
+    {
+        "question": "What does the Windows + E keyboard shortcut do in Windows?",
+        "options": [
+            "Opens Edge browser",
+            "Opens Email client",
+            "Opens File Explorer",
+            "Opens Excel if installed"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Windows + E is a standard shortcut in Windows that opens File Explorer (previously called Windows Explorer). This is one of the most commonly used Windows shortcuts, providing quick access to the file system without having to navigate through the Start menu or taskbar. Other useful Windows key shortcuts include Windows + D to show desktop, Windows + L to lock the computer, and Windows + R to open the Run dialog.",
+        "weight": 1
+    },
+    {
+        "question": "What is the purpose of the Windows + R shortcut followed by typing a command?",
+        "options": [
+            "It restarts the computer after a specified time",
+            "It opens the Run dialog to quickly execute commands, programs, or open specific folders",
+            "It repairs corrupted system files",
+            "It registers new software with the operating system"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Windows + R opens the Run dialog, which allows users to quickly execute commands, launch programs, or open specific folders by typing their names or paths. For example, typing 'msconfig' opens the System Configuration utility, 'devmgmt.msc' opens Device Manager, 'cmd' launches Command Prompt, and various 'shell:' commands open special Windows folders. The Run dialog is a power-user tool for quickly accessing Windows features without navigating through menus.",
+        "weight": 1
+    },
+    {
+        "question": "What do ALT codes allow you to type?",
+        "options": [
+            "Programming code using keyboard shortcuts",
+            "Alternative text for images",
+            "Special characters and symbols not directly available on the keyboard",
+            "Automated text responses for email"
+        ],
+        "correctAnswer": 2,
+        "explanation": "ALT codes allow users to type special characters, symbols, and characters from other languages that aren't directly available on the keyboard. To use ALT codes, you hold down the ALT key while typing a specific number on the numeric keypad. For example, ALT+0169 produces the copyright symbol (©), ALT+0174 creates the registered trademark symbol (®), and ALT+0176 inserts the degree symbol (°). These codes provide access to a wide range of characters beyond what's visible on keyboard keys.",
+        "weight": 1
+    },
+    {
+        "question": "What is Windows Sandbox?",
+        "options": [
+            "A children's game included with Windows",
+            "A lightweight, temporary virtual environment to safely run untrusted applications",
+            "The restricted user account mode for children",
+            "A feature that stores all files in a protected area"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Windows Sandbox is a lightweight, temporary desktop environment where users can safely run potentially suspicious or untrusted software. It creates an isolated, virtualized instance of Windows that's separate from the main system. Any software installed in the Sandbox doesn't affect the host machine, and when the Sandbox is closed, all software and files within it are permanently deleted. It's useful for testing new applications or opening suspicious files without risking the main system.",
+        "weight": 1
+    },
+    {
+        "question": "What are Virtual Desktops in Windows?",
+        "options": [
+            "Remote desktop connections to other computers",
+            "Different user accounts on the same computer",
+            "Multiple desktop workspaces that allow organizing applications into separate screens",
+            "Virtualized operating systems running in a window"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Virtual Desktops in Windows allow users to organize open applications across multiple desktop workspaces, each with its own set of open windows. Users can create different desktops for different tasks or projects (e.g., one for work, another for personal use) and switch between them to reduce clutter. This feature helps with organization and productivity by separating applications visually without having to minimize or resize windows. Virtual desktops can be managed using the Task View button or Windows+Tab shortcut.",
+        "weight": 1
+    },
+    {
+        "question": "What is Clipboard History in Windows 10/11?",
+        "options": [
+            "A feature that keeps a log of all files copied to external drives",
+            "A security feature that prevents clipboard hijacking",
+            "A feature that stores multiple copied items and allows you to paste them later",
+            "A log of all text entered into the computer"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Clipboard History is a Windows feature that stores multiple items that have been copied or cut, allowing users to access and paste previously copied content instead of just the most recent item. It can be enabled in Settings and accessed using Windows+V. The feature supports text, HTML, and images under 4MB. This is particularly useful for tasks that involve collecting information from multiple sources or when you need to reuse something you copied earlier without having to go back and recopy it.",
+        "weight": 1
+    },
+    {
+        "question": "What is the Windows Registry?",
+        "options": [
+            "A database of registered Windows users",
+            "A hierarchical database that stores configuration settings and options for the operating system and applications",
+            "A list of all the software registered on your computer",
+            "A record of all Windows updates installed"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The Windows Registry is a hierarchical database that stores configuration settings and options for the Windows operating system and installed applications. It contains information and settings for hardware, operating system configurations, user preferences, and software. The registry replaced individual INI files used in earlier versions of Windows, centralizing settings in one location. It's organized into 'hives' with keys and values, and can be edited using the Registry Editor (regedit), though caution is advised as incorrect changes can cause system problems.",
+        "weight": 1
+    },
+    {
+        "question": "What is the primary purpose of the Windows Task Manager?",
+        "options": [
+            "To schedule tasks to run automatically",
+            "To monitor and manage currently running applications, processes, and system resources",
+            "To organize daily work tasks for the user",
+            "To manage Windows Update settings"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Windows Task Manager allows users to monitor and manage running applications, background processes, and system resources. It provides information about CPU, memory, disk, and network usage; allows forcing unresponsive applications to close; displays startup programs and their impact; shows running services; and provides performance monitoring graphs. Task Manager is commonly accessed using Ctrl+Shift+Esc or by right-clicking the taskbar and selecting 'Task Manager.'",
+        "weight": 1
+    },
+    {
+        "question": "What does the msconfig (System Configuration) utility allow users to do?",
+        "options": [
+            "Configure Microsoft Office settings",
+            "Control which programs and services start when Windows boots",
+            "Set up multiple user accounts",
+            "Adjust display settings"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The System Configuration utility (msconfig) is a Windows administrative tool that allows users to control which programs and services start when Windows boots. It provides options to configure startup programs, enable/disable Windows services, modify boot options for troubleshooting, and access various system tools. It's particularly useful for diagnosing startup problems, performing a clean boot for troubleshooting, or disabling unnecessary startup items to improve boot time and system performance.",
+        "weight": 1
+    },
+    {
+        "question": "What is the main purpose of file compression?",
+        "options": [
+            "To encrypt files for security",
+            "To combine multiple files into one for organization",
+            "To reduce file size for easier storage and transfer",
+            "To back up files to prevent data loss"
+        ],
+        "correctAnswer": 2,
+        "explanation": "File compression reduces the size of files by identifying and eliminating redundant or unnecessary data using various algorithms. The primary purposes are to save storage space, reduce transfer times when sending files over networks or the internet, and bundle multiple files together for easier organization and transfer. Common formats include ZIP, RAR, 7Z, and TAR.GZ, each with different compression algorithms, ratios, and features.",
+        "weight": 1
+    },
+    {
+        "question": "What is the difference between lossy and lossless compression?",
+        "options": [
+            "Lossy compression only works on image files while lossless works on any file type",
+            "Lossy compression permanently removes some data to achieve better compression, while lossless preserves all original data",
+            "Lossy compression is slower but more effective than lossless compression",
+            "Lossy compression is a paid feature while lossless is free in most software"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Lossless compression reduces file size while preserving all original data, allowing the file to be decompressed exactly as it was before compression. This is essential for documents, programs, and data where any change would cause corruption. Lossy compression permanently removes data deemed less important to achieve higher compression ratios, making it suitable for media files (JPEG images, MP3 audio, MP4 video) where some quality loss is acceptable. Lossy compression cannot be reversed to recover the original file exactly.",
+        "weight": 1
+    },
+    {
+        "question": "What file extension indicates a TAR archive compressed with Gzip?",
+        "options": [
+            ".zip",
+            ".rar",
+            ".tar.gz or .tgz",
+            ".7z"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A .tar.gz or .tgz file is a TAR (Tape Archive) archive that has been compressed using Gzip compression. TAR itself only bundles files together without compression (creating a .tar file), and then Gzip compression is applied to the TAR file. This two-step approach is common in Linux and Unix systems. Other similar formats include .tar.bz2 (TAR compressed with bzip2) and .tar.xz (TAR compressed with xz), each using different compression algorithms with various trade-offs between compression ratio and speed.",
+        "weight": 1
+    },
+    {
+        "question": "How can a user navigate Windows without using a mouse?",
+        "options": [
+            "It's not possible to use Windows without a mouse",
+            "Only by using touchscreen input",
+            "Using keyboard shortcuts, keyboard navigation, and features like Mouse Keys",
+            "Only through voice commands"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Windows provides comprehensive keyboard navigation for users who cannot or prefer not to use a mouse. Key features include: keyboard shortcuts for common actions (Alt+Tab to switch windows, Windows+E for File Explorer); Tab key to move between elements; arrow keys to navigate menus; Alt key to access menu bars; keyboard focus indicators; Mouse Keys (allows controlling the pointer with the numeric keypad); and Sticky Keys (for users who can't hold down multiple keys simultaneously). These features make Windows fully accessible through keyboard-only navigation.",
+        "weight": 1
+    },
+    {
+        "question": "What does the Windows Narrator feature do?",
+        "options": [
+            "It converts written text into audio files",
+            "It narrates videos automatically when no audio is available",
+            "It's a screen reader that reads text aloud and describes elements on the screen",
+            "It creates voice recordings for presentations"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Narrator is a built-in screen reader in Windows that reads text aloud and describes elements on the screen for users with visual impairments. It can announce everything that happens on screen, read documents, webpages, and UI elements, and provide audio feedback for interactions. Narrator includes different voices and reading speeds, navigation modes for different contexts, and compatibility with braille displays. It helps make computers accessible to those who cannot see the screen or have difficulty reading.",
+        "weight": 1
+    },
+    {
+        "question": "What does the Windows Magnifier tool do?",
+        "options": [
+            "It enlarges small text in documents only",
+            "It increases the screen resolution",
+            "It enlarges parts of the screen to make content easier to see",
+            "It only works with special magnification hardware"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Windows Magnifier is an accessibility tool that enlarges portions of the screen to make content easier to see for users with visual impairments. It can be used in different modes: full-screen mode (entire screen is magnified), lens mode (moves a magnified area with the mouse), and docked mode (keeps a magnified strip at the top of the screen). Users can adjust magnification levels, invert colors for higher contrast, and customize how Magnifier follows text insertion points and mouse pointers.",
+        "weight": 1
+    },
+    {
+        "question": "What is overclocking in computing?",
+        "options": [
+            "Setting a computer's clock to the correct time automatically",
+            "Running a component (typically CPU or GPU) at higher speeds than the manufacturer's specifications",
+            "The process of scheduling automated tasks",
+            "Making a computer run continuously for extended periods"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Overclocking is the process of increasing a component's clock speed beyond the manufacturer's factory settings to achieve higher performance. Most commonly applied to CPUs and GPUs, it takes advantage of the fact that manufacturers typically set conservative speeds to ensure stability across all chips produced. Successful overclocking can provide better performance for free, though it increases heat output, power consumption, and potential instability if done incorrectly.",
+        "weight": 1
+    },
+    {
+        "question": "What is the primary risk of overclocking?",
+        "options": [
+            "Permanent damage to hardware from excessive voltage or heat",
+            "Voiding your operating system license",
+            "Incompatibility with software applications",
+            "Decreased storage capacity"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The primary risks of overclocking include potential hardware damage from excessive voltage or heat, system instability causing crashes or data corruption, and reduced component lifespan due to increased stress. Modern components have safeguards to prevent catastrophic failure, but improper settings can still permanently damage hardware. Overclocking typically voids manufacturer warranties, though it's difficult for manufacturers to detect unless physical damage occurs.",
+        "weight": 1
+    },
+    {
+        "question": "What component is most critical to upgrade when planning to overclock a CPU?",
+        "options": [
+            "The monitor",
+            "The cooling solution (better CPU cooler, case airflow)",
+            "The hard drive",
+            "The case lighting"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An effective cooling solution is critical when overclocking since higher frequencies and voltages generate more heat. This includes a high-quality CPU cooler (air or liquid), good case airflow with proper fan configuration, and sometimes improved thermal paste application. Without adequate cooling, an overclocked CPU will thermal throttle (reduce performance to prevent damage) or potentially become unstable. Other important considerations include a quality motherboard that supports overclocking and a reliable power supply with sufficient wattage.",
+        "weight": 1
+    },
+    {
+        "question": "What does RAID stand for?",
+        "options": [
+            "Random Access Internal Drives",
+            "Redundant Array of Independent Disks",
+            "Rapid Acceleration for Internal Data",
+            "Remote Access for Integrated Devices"
+        ],
+        "correctAnswer": 1,
+        "explanation": "RAID stands for Redundant Array of Independent Disks (originally Inexpensive Disks). It's a storage technology that combines multiple physical disk drives into one logical unit for data redundancy, performance improvement, or both. Different RAID levels offer various combinations of increased reliability, capacity, or speed, allowing users to choose the setup that best fits their needs for data protection versus performance.",
+        "weight": 1
+    },
+    {
+        "question": "What is the primary purpose of RAID 5?",
+        "options": [
+            "Maximum speed with no redundancy",
+            "Simple mirroring for full redundancy",
+            "Balancing performance and redundancy through distributed parity",
+            "Combining multiple RAID arrays"
+        ],
+        "correctAnswer": 2,
+        "explanation": "RAID 5 balances performance and redundancy by striping data across multiple drives and distributing parity information. This approach provides fault tolerance that can survive a single drive failure while using less total storage than mirroring (unlike RAID 1, which requires double the capacity). RAID 5 typically requires at least three drives and offers good read performance, though write performance is slower due to parity calculations. It's widely used in business environments where both performance and data protection are important.",
+        "weight": 1
+    },
+    {
+        "question": "What happens to the data in a RAID 0 array if one drive fails?",
+        "options": [
+            "All data in the array is lost",
+            "Only the data on the failed drive is lost; the rest remains accessible",
+            "The array continues to function in a degraded state until the drive is replaced",
+            "The system automatically rebuilds the data from parity information"
+        ],
+        "correctAnswer": 0,
+        "explanation": "In a RAID 0 array (striping without parity), data is split across multiple drives to increase performance, but there is no redundancy. If any single drive in the array fails, all data in the entire array becomes inaccessible and is effectively lost. This makes RAID 0 unsuitable for storing important data unless it's backed up elsewhere. RAID 0 should only be used for temporary data, cache files, or scenarios where maximum performance is critical and data loss is acceptable.",
+        "weight": 1
+    }
+]

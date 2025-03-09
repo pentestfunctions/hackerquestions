@@ -1,0 +1,939 @@
+[
+            {
+                "question": "What is phishing?",
+                "options": [
+                    "A recreational activity involving catching fish",
+                    "A cybersecurity technique to protect data",
+                    "A type of cyberattack that uses deceptive messages to trick users into revealing sensitive information",
+                    "A network monitoring tool"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Phishing is a type of social engineering attack where attackers disguise themselves as trustworthy entities to trick victims into revealing sensitive information such as passwords, credit card numbers, or personal data.",
+                "weight": 1
+            },
+            {
+                "question": "You receive an urgent email claiming to be from your bank stating that your account has been compromised and you need to click a link to verify your identity. What should you do?",
+                "options": [
+                    "Click the link immediately and provide your information to secure your account",
+                    "Reply to the email asking for more details",
+                    "Ignore the email, directly contact your bank through their official phone number, and report the suspicious email",
+                    "Forward the email to friends to warn them"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Never click on links in suspicious emails. Instead, contact your bank directly using their official contact information (not from the email) to verify if the communication is legitimate.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following is NOT a common indicator of a phishing email?",
+                "options": [
+                    "Misspelled domain names in the sender's email address",
+                    "Urgent calls to action requiring immediate response",
+                    "Requests for personal or financial information",
+                    "Digital signature from a verified organization"
+                ],
+                "correctAnswer": 3,
+                "explanation": "A genuine digital signature from a verified organization is actually a sign of legitimacy, not phishing. Most phishing emails lack proper digital signatures. Other indicators like misspelled domains, urgency, and requests for sensitive information are common red flags in phishing attempts.",
+                "weight": 1
+            },
+            {
+                "question": "Which phishing technique involves creating a fake login page that looks identical to a legitimate website but substitutes similar-looking Unicode characters in the URL?",
+                "options": [
+                    "Clone phishing",
+                    "Smishing",
+                    "Homograph attack",
+                    "Vishing"
+                ],
+                "correctAnswer": 2,
+                "explanation": "A homograph attack uses Unicode characters that look similar to standard Latin characters to create URLs that appear legitimate but actually point to malicious sites. For example, using 'рaypal.com' where the 'р' is actually a Cyrillic character that looks like the Latin 'p'.",
+                "weight": 1
+            },
+            {
+                "question": "What is spear phishing?",
+                "options": [
+                    "A fishing technique using actual spears",
+                    "A targeted phishing attack directed at specific individuals or organizations",
+                    "A method to secure email communications",
+                    "A technique to recover deleted emails"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Spear phishing is a targeted form of phishing where attackers customize their attack strategy for specific individuals or organizations, often using personal information to make their deceptive messages more convincing.",
+                "weight": 1
+            },
+            {
+                "question": "Your company's CEO sends you an urgent email requesting you to transfer funds to a new vendor. The email mentions confidentiality and emphasizes immediate action. What is the best course of action?",
+                "options": [
+                    "Process the transfer immediately as the CEO requested",
+                    "Verify the request through a different communication channel with the CEO before proceeding",
+                    "Forward the email to your colleagues to get their opinions",
+                    "Transfer a smaller amount than requested to test if it's legitimate"
+                ],
+                "correctAnswer": 1,
+                "explanation": "This scenario describes a potential Business Email Compromise (BEC) attack. Always verify unusual financial requests through a different communication channel, even if they appear to come from executives.",
+                "weight": 1
+            },
+            {
+                "question": "What type of targeted phishing attack specifically focuses on high-profile executives or other high-value targets?",
+                "options": [
+                    "Spear phishing",
+                    "Clone phishing",
+                    "Whaling",
+                    "Pharming"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Whaling is a highly targeted phishing attack aimed at senior executives and other high-profile targets within businesses. The name 'whaling' refers to the high-value targets or 'big fish' being pursued, and these attacks often contain content specific to executive roles or functions.",
+                "weight": 1
+            },
+            {
+                "question": "What is two-factor authentication (2FA)?",
+                "options": [
+                    "A password that must be changed every two days",
+                    "A security system requiring two different passwords",
+                    "A security measure that requires two different types of verification before granting access",
+                    "A technique that involves two people approving all security changes"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Two-factor authentication (2FA) is a security measure that requires users to provide two different types of verification factors to gain access, typically something you know (password) and something you have (mobile device) or something you are (biometric).",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following is NOT a common method of two-factor authentication?",
+                "options": [
+                    "SMS text message codes",
+                    "Fingerprint scanning",
+                    "Security questions",
+                    "Authenticator apps"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Security questions are considered a knowledge factor, just like passwords. They don't constitute a second factor since they're still something you know. True 2FA requires factors from different categories: something you know, something you have, or something you are.",
+                "weight": 1
+            },
+            {
+                "question": "Why is SMS-based two-factor authentication considered less secure than using an authenticator app?",
+                "options": [
+                    "SMS messages are too slow to receive",
+                    "SMS can be intercepted or redirected through SIM swapping or SS7 vulnerabilities",
+                    "Authenticator apps are easier to use",
+                    "SMS messages don't work internationally"
+                ],
+                "correctAnswer": 1,
+                "explanation": "SMS-based 2FA is vulnerable to SIM swapping attacks (where attackers convince carriers to transfer a phone number to a new SIM) and SS7 protocol vulnerabilities that can allow SMS interception. Authenticator apps generate codes locally on the device without transmitting them over cellular networks, making them more secure.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following provides the strongest security for two-factor authentication?",
+                "options": [
+                    "Email verification codes",
+                    "SMS verification codes",
+                    "Software-based authenticator apps",
+                    "FIDO2-compliant hardware security keys"
+                ],
+                "correctAnswer": 3,
+                "explanation": "FIDO2-compliant hardware security keys (like YubiKeys) offer the strongest protection as they're physical devices that use cryptographic protocols to authenticate, making them resistant to phishing and remote interception. They also provide origin binding, ensuring credentials can only be used with the legitimate websites they were created for.",
+                "weight": 1
+
+    },
+    {
+                "question": "What is a watering hole attack?",
+                "options": [
+                    "An attack that targets water supply systems",
+                    "A cyberattack strategy where attackers compromise websites frequently visited by their targeted victims",
+                    "A physical security breach at water cooler locations",
+                    "A denial of service attack against utility companies"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A watering hole attack is a security exploit in which the attacker observes which websites are frequently visited by their targets and infects those sites with malware, waiting for the victims to visit the compromised sites.",
+                "weight": 1
+            },
+            {
+                "question": "Your organization discovers that several employees were infected with malware after visiting an industry-specific forum they all regularly use. What type of attack is this most likely to be?",
+                "options": [
+                    "Spear phishing",
+                    "Watering hole attack",
+                    "Brute force attack",
+                    "Man-in-the-middle attack"
+                ],
+                "correctAnswer": 1,
+                "explanation": "This scenario describes a classic watering hole attack, where attackers compromise a legitimate website commonly visited by their targets to distribute malware to specific groups of users.",
+                "weight": 1
+            },
+            {
+                "question": "Which technique would be MOST effective against watering hole attacks?",
+                "options": [
+                    "Using unique passwords for each website",
+                    "Implementing a web application firewall",
+                    "Employing browser isolation technology that renders websites in a secured container",
+                    "Changing your IP address regularly"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Browser isolation technology creates a secure, isolated environment where web content is rendered separately from the user's device. This approach prevents malicious code from a compromised website from directly accessing the user's system, effectively mitigating watering hole attacks even when visiting compromised sites.",
+                "weight": 1
+    },
+    {
+                "question": "What is a password manager?",
+                "options": [
+                    "A person responsible for managing passwords in an organization",
+                    "A software application designed to store and manage online credentials securely",
+                    "A security protocol that changes passwords automatically",
+                    "A hardware device that generates passwords"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A password manager is a software application that helps users store, generate, and manage their passwords for local applications and online services. It typically stores passwords in an encrypted database locked with a master password.",
+                "weight": 1
+            },
+            {
+                "question": "You have accounts on over 50 different websites. What is the most secure approach to managing your passwords?",
+                "options": [
+                    "Use the same complex password for all sites for easy memorization",
+                    "Write all passwords in a notebook kept near your computer",
+                    "Use a password manager to generate and store unique, complex passwords for each site",
+                    "Use simple passwords with a consistent pattern so you can remember them"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Using a password manager allows you to create and store unique, complex passwords for each account, protected by a single master password. This prevents credential reuse vulnerabilities while maintaining convenience.",
+                "weight": 1
+            },
+            {
+                "question": "What is the primary security risk associated with using a password manager?",
+                "options": [
+                    "Password managers can be easily hacked by any attacker",
+                    "They create a single point of failure if the master password is compromised",
+                    "They make passwords too complex to remember",
+                    "They slow down your login process significantly"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Password managers do create a single point of failure. If an attacker discovers your master password, they potentially gain access to all your stored credentials. This is why it's crucial to use a very strong, unique master password and enable 2FA on your password manager whenever possible.",
+                "weight": 1
+            },
+            {
+                "question": "What advanced security feature should you look for in a password manager to protect against credential stuffing attacks?",
+                "options": [
+                    "Password sharing capabilities",
+                    "Biometric authentication support",
+                    "Automatic breach detection and alerts",
+                    "Cross-platform synchronization"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Automatic breach detection monitors known data breaches and alerts users when their stored credentials appear in compromised databases. This allows users to change affected passwords immediately, protecting against credential stuffing attacks where attackers use breached credential pairs across multiple services.",
+                "weight": 1
+    },
+    {
+                "question": "What is an Evil Twin attack in the context of WiFi security?",
+                "options": [
+                    "When identical twins hack into a system together",
+                    "A rogue WiFi access point that appears to be legitimate but is set up by an attacker to eavesdrop on wireless communications",
+                    "When two devices on a network have the same IP address",
+                    "A malware that creates a duplicate of every file on your system"
+                ],
+                "correctAnswer": 1,
+                "explanation": "An Evil Twin attack involves an attacker setting up a rogue wireless access point that mimics a legitimate network. When users connect to this fake network, the attacker can intercept data transmission and potentially steal sensitive information.",
+                "weight": 1
+            },
+            {
+                "question": "You're working at a coffee shop and notice two WiFi networks with the same name as the coffee shop's network, but one has slightly stronger signal. What should you do?",
+                "options": [
+                    "Connect to the stronger signal for better internet speed",
+                    "Ask the staff which network is the official one before connecting",
+                    "Connect to either one since they're both from the coffee shop",
+                    "Use a VPN regardless of which network you choose"
+                ],
+                "correctAnswer": 1,
+                "explanation": "This situation suggests a possible Evil Twin attack. Always verify the legitimate network with staff before connecting. Even with confirmation, using a VPN on public WiFi is a good additional security measure.",
+                "weight": 1
+            },
+            {
+                "question": "What is a deauthentication attack in WiFi security?",
+                "options": [
+                    "Breaking the encryption on a WiFi password",
+                    "Forcing users to log in again to a website",
+                    "A technique where an attacker forces devices to disconnect from their WiFi network",
+                    "Removing authentication requirements from a network"
+                ],
+                "correctAnswer": 2,
+                "explanation": "A deauthentication attack (or 'deauth attack') involves sending forged management frames that appear to come from the legitimate access point, telling connected devices to disconnect from the network. This can be used to disrupt communications or force reconnections that allow for capturing handshake data.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following WiFi security protocols is the most secure?",
+                "options": [
+                    "WEP (Wired Equivalent Privacy)",
+                    "WPA (WiFi Protected Access)",
+                    "WPA2 (WiFi Protected Access 2)",
+                    "WPA3 (WiFi Protected Access 3)"
+                ],
+                "correctAnswer": 3,
+                "explanation": "WPA3 is the latest and most secure WiFi security protocol. It provides stronger encryption through Simultaneous Authentication of Equals (SAE), which replaces the Pre-Shared Key (PSK) exchange in WPA2, protecting against offline dictionary attacks. It also offers forward secrecy, meaning even if a password is compromised, previously captured traffic cannot be decrypted.",
+                "weight": 1
+    },
+    {
+                "question": "What is OSINT?",
+                "options": [
+                    "A type of operating system for intelligence agencies",
+                    "Open Source Intelligence - information collected from publicly available sources",
+                    "Online Security Interface Network Technology",
+                    "Operational Security Implementation National Template"
+                ],
+                "correctAnswer": 1,
+                "explanation": "OSINT (Open Source Intelligence) refers to data collected from publicly available sources to be used in an intelligence context. This includes information from social media, public records, publications, and other open sources.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following would NOT be considered an OSINT source?",
+                "options": [
+                    "A person's public social media profiles",
+                    "Company information on a corporate website",
+                    "Private emails exchanged between two individuals",
+                    "Public court records"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Private communications like emails between individuals are not considered OSINT because they are not publicly available sources. OSINT only includes information that is legally accessible to the public without breaching privacy laws or agreements.",
+                "weight": 1
+            },
+            {
+                "question": "What is 'dorking' in the context of OSINT?",
+                "options": [
+                    "Posting embarrassing content about individuals",
+                    "Using specialized search engine operators to find specific types of information",
+                    "Creating fake social media profiles to gather information",
+                    "Analyzing metadata from downloaded documents"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Dorking (or Google dorking) refers to using advanced search engine operators to find specific types of information that might not be easily accessible through standard searches. For example, using 'site:' to search within a specific domain or 'filetype:' to find particular file types.",
+                "weight": 1
+            },
+            {
+                "question": "A security researcher discovered sensitive company information using only public websites and search engines. Which advanced OSINT technique likely enabled this discovery?",
+                "options": [
+                    "Social engineering phone calls",
+                    "Unauthorized access to company servers",
+                    "Searching for exposed Git repositories and code snippets",
+                    "Bribing company employees"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Searching for exposed Git repositories, code snippets on platforms like GitHub or Pastebin, and other developer resources is a powerful OSINT technique. Developers sometimes accidentally publish code containing API keys, credentials, or other sensitive information to public repositories, creating serious security vulnerabilities that can be discovered through purely public means.",
+                "weight": 1
+    },
+    {
+                "question": "What is SIM swapping?",
+                "options": [
+                    "Transferring contacts between SIM cards",
+                    "A type of social engineering attack where attackers convince mobile carriers to transfer a victim's phone number to a SIM card they control",
+                    "A technique to extend mobile battery life by switching between multiple SIM cards",
+                    "Exchanging international SIM cards while traveling"
+                ],
+                "correctAnswer": 1,
+                "explanation": "SIM swapping is an attack where fraudsters convince or bribe mobile carrier employees to transfer a victim's phone number to a SIM card in the attacker's possession, allowing them to receive SMS verification codes and bypass 2FA protections.",
+                "weight": 1
+            },
+            {
+                "question": "You suddenly lose cell service on your phone, and shortly after, you receive email notifications that your password has been reset on several accounts. What is likely happening?",
+                "options": [
+                    "Your phone has a technical malfunction",
+                    "You're experiencing a SIM swap attack",
+                    "Your email has been compromised",
+                    "Your accounts are being updated by the service provider"
+                ],
+                "correctAnswer": 1,
+                "explanation": "This scenario describes the typical signs of a SIM swap attack. The attacker has likely transferred your phone number to their device, used it to receive password reset codes, and is now taking over your accounts.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following would be the BEST protection against SIM swapping?",
+                "options": [
+                    "Using a strong password for your online accounts",
+                    "Regularly checking your email for suspicious activity",
+                    "Setting up a PIN or passcode with your mobile carrier for account changes",
+                    "Changing your phone number frequently"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Setting up a PIN or additional verification requirement with your mobile carrier helps prevent unauthorized SIM transfers. This additional layer of security means that even if an attacker has your personal information, they would also need this PIN to convince the carrier to transfer your number.",
+                "weight": 1
+    },
+    {
+                "question": "What is a ransomware attack?",
+                "options": [
+                    "A type of hardware failure that requires expensive replacement parts",
+                    "Malicious software that encrypts a victim's files and demands payment for the decryption key",
+                    "An attack that slows down internet connections until a fee is paid",
+                    "A fake antivirus program that charges users for removing non-existent threats"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Ransomware is a type of malicious software that encrypts a victim's files, making them inaccessible. The attacker then demands a ransom payment, typically in cryptocurrency, in exchange for the decryption key needed to restore access to the files.",
+                "weight": 1
+            },
+            {
+                "question": "You turn on your computer to find a message stating that all your files have been encrypted and you must pay 1 Bitcoin within 72 hours to get them back. What should be your FIRST action?",
+                "options": [
+                    "Pay the ransom immediately to get your files back",
+                    "Disconnect the infected device from the network to prevent the ransomware from spreading",
+                    "Try to find the decryption key by searching online",
+                    "Delete the ransomware message from your screen"
+                ],
+                "correctAnswer": 1,
+                "explanation": "The first step should be to disconnect the infected system from the network to prevent the ransomware from spreading to other connected devices. Then seek professional assistance or check resources like nomoreransom.org to see if decryption tools are available.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following is the MOST effective preparation against ransomware attacks?",
+                "options": [
+                    "Installing antivirus software",
+                    "Maintaining regular, offline backups of critical data",
+                    "Using a VPN when browsing the internet",
+                    "Updating your operating system"
+                ],
+                "correctAnswer": 1,
+                "explanation": "While all listed options are important security practices, maintaining regular, offline (or air-gapped) backups is the most effective preparation against ransomware. If you have reliable backups that aren't accessible to the ransomware, you can restore your systems without paying the ransom, regardless of how sophisticated the attack might be.",
+                "weight": 1
+            },
+            {
+                "question": "What is a 'double extortion' technique in modern ransomware attacks?",
+                "options": [
+                    "Encrypting files twice with different algorithms",
+                    "Demanding two separate ransom payments",
+                    "Encrypting files and also threatening to publish stolen data if ransom isn't paid",
+                    "Attacking both personal and business devices simultaneously"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Double extortion is an advanced ransomware technique where attackers not only encrypt the victim's files but also exfiltrate sensitive data before encryption. They then threaten to publicly release or sell this data if the ransom isn't paid, adding pressure even on organizations with good backups since restoring systems doesn't address the data leak threat.",
+                "weight": 1
+    },
+    {
+                "question": "What is browser fingerprinting?",
+                "options": [
+                    "A technique to speed up web browsing by caching frequently visited sites",
+                    "The process of identifying and tracking users based on their browser configuration and system attributes",
+                    "A security feature that prevents unauthorized use of web browsers",
+                    "A method to authenticate websites using digital certificates"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Browser fingerprinting is a tracking technique that collects information about a device's browser type, operating system, plugins, time zone, language, screen resolution, and other settings to create a unique identifier for that user, often used for tracking across websites.",
+                "weight": 1
+            },
+            {
+                "question": "Which of these actions would LEAST help in reducing browser fingerprinting?",
+                "options": [
+                    "Using a privacy-focused browser with anti-fingerprinting features",
+                    "Regularly clearing browser cookies",
+                    "Using browser extensions that block fingerprinting scripts",
+                    "Frequently changing your browser's user agent"
+                ],
+                "correctAnswer": 1,
+                "explanation": "While clearing cookies is good practice for privacy, it generally doesn't help much with browser fingerprinting, which identifies users based on browser configurations and system attributes rather than stored cookies.",
+                "weight": 1
+            },
+            {
+                "question": "Which browser feature can be used for fingerprinting that most users don't realize exposes identifying information?",
+                "options": [
+                    "Bookmarks",
+                    "Browsing history",
+                    "Canvas rendering",
+                    "Saved passwords"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Canvas fingerprinting uses the HTML5 Canvas element to draw invisible images on websites. Different devices and browsers render these images slightly differently, creating a unique fingerprint. Unlike obvious privacy concerns such as history or cookies, most users are unaware that their device's rendering capabilities can identify them.",
+                "weight": 1
+            },
+            {
+                "question": "What advanced technique do sophisticated trackers use to bypass traditional fingerprinting protections?",
+                "options": [
+                    "Browser extension fingerprinting",
+                    "Audio fingerprinting",
+                    "Hardware sensor fingerprinting on mobile devices",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Advanced trackers now use multiple sophisticated techniques: identifying installed extensions by their behavior, analyzing how audio is processed by the device, and using motion sensors, battery level reporting, and other hardware interfaces on mobile devices to create highly accurate fingerprints that persist even when traditional protections are in place.",
+                "weight": 1
+    },
+    {
+                "question": "What is a USB Rubber Ducky?",
+                "options": [
+                    "A waterproof USB drive shaped like a duck",
+                    "A keystroke injection tool disguised as a regular USB flash drive",
+                    "A hardware encryption device for secure file storage",
+                    "A USB hub with multiple ports arranged in a duck shape"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A USB Rubber Ducky is a keystroke injection tool that looks like a regular USB flash drive. When plugged into a computer, it registers as a keyboard and can execute pre-programmed commands or scripts at high speed, potentially compromising the system.",
+                "weight": 1
+            },
+            {
+                "question": "You notice a coworker briefly plugged in what looked like a USB drive to your colleague's unattended computer, but didn't appear to copy any files before removing it. What could be the concern?",
+                "options": [
+                    "There is no concern if they didn't copy files",
+                    "They may have been using a USB Rubber Ducky or similar device to execute malicious commands",
+                    "They were probably just checking if the USB port works",
+                    "They might have been charging a small device"
+                ],
+                "correctAnswer": 1,
+                "explanation": "This behavior is suspicious and consistent with the use of a keystroke injection tool like a USB Rubber Ducky, which can execute commands in seconds without needing to visibly copy files. This could be used to install malware, create backdoors, or steal data.",
+                "weight": 1
+            },
+            {
+                "question": "What is a USB Killer device?",
+                "options": [
+                    "A USB drive that deletes all files when inserted",
+                    "Software that blocks unauthorized USB devices",
+                    "A device that discharges high voltage into a computer's USB port, destroying the hardware",
+                    "An antivirus tool that removes USB-based malware"
+                ],
+                "correctAnswer": 2,
+                "explanation": "A USB Killer is a malicious hardware device that looks like a normal USB drive but contains capacitors that charge from the USB power lines and then discharge a high voltage (usually around 200V) back into the device, permanently damaging or destroying the computer's motherboard or USB controller.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following is the most effective protection against malicious USB devices in a high-security environment?",
+                "options": [
+                    "USB port covers and locks",
+                    "Software that blocks unrecognized USB devices",
+                    "USB data blockers (charge-only adapters)",
+                    "Implementing a comprehensive USB control policy with physical USB port disabling and epoxy sealing for critical systems"
+                ],
+                "correctAnswer": 3,
+                "explanation": "In high-security environments, the most comprehensive approach is a multi-layered USB control policy that includes physically disabling or epoxy-sealing USB ports on critical systems, implementing USB device whitelisting, using data diodes where appropriate, employing USB sanitization stations, and strict enforcement procedures combined with regular security awareness training.",
+                "weight": 1
+    },
+    {
+                "question": "What is typosquatting?",
+                "options": [
+                    "A method to identify typing errors in programming code",
+                    "A cyberattack that targets users who mistype website addresses",
+                    "The practice of reserving domain names of commonly misspelled brands for SEO purposes",
+                    "A technique used to improve typing speed and accuracy"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Typosquatting is a form of cybersquatting that targets users who incorrectly type a website address into their web browser. Attackers register domains with common misspellings of popular websites to capture traffic from typing errors and potentially conduct phishing attacks.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following URLs is most likely a typosquatting attempt targeting Amazon users?",
+                "options": [
+                    "amazon-secure-shopping.com",
+                    "amazonshopping.com",
+                    "amason.com",
+                    "shop-at-amazon.com"
+                ],
+                "correctAnswer": 2,
+                "explanation": "The domain 'amason.com' represents a classic typosquatting attempt, where a single letter is changed (replacing 'z' with 's'). This type of subtle misspelling can easily go unnoticed by users typing quickly and lead them to a potentially malicious site.",
+                "weight": 1
+            },
+            {
+                "question": "What technique do attackers use to create particularly deceptive typosquatted domains that appear visually identical to legitimate domains?",
+                "options": [
+                    "Adding hyphens between words",
+                    "Using homoglyphs (similar-looking characters from different scripts)",
+                    "Appending extra words like 'secure' or 'login'",
+                    "Using different top-level domains (TLDs)"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Homoglyph attacks use characters from different scripts that look identical or nearly identical to Latin characters, such as using the Cyrillic 'о' instead of the Latin 'o'. This creates domains that appear visually identical to legitimate domains but are actually different, making them extremely difficult for users to detect visually.",
+                "weight": 1
+            },
+            {
+                "question": "Beyond websites, where else is typosquatting becoming an increasing security concern?",
+                "options": [
+                    "Mobile app store listings",
+                    "Email domains",
+                    "Package repositories for programming languages",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Typosquatting has expanded beyond websites to all digital ecosystems. Attackers create malicious packages with names similar to popular libraries in repositories like PyPI or npm, fake apps mimicking legitimate ones in app stores, and email domains that look like corporate domains. This comprehensive approach targets developers, end-users, and corporate environments through multiple attack vectors.",
+                "weight": 1
+    },
+    {
+                "question": "Why are software and operating system updates important for security?",
+                "options": [
+                    "They provide new features and improve performance",
+                    "They fix security vulnerabilities that could be exploited by attackers",
+                    "They help applications run faster",
+                    "They add new user interface elements"
+                ],
+                "correctAnswer": 1,
+                "explanation": "While updates often include new features and performance improvements, their primary security function is patching known vulnerabilities. Unpatched software and operating systems are among the most common attack vectors used by cybercriminals.",
+                "weight": 1
+            },
+            {
+                "question": "What is a zero-day vulnerability?",
+                "options": [
+                    "A vulnerability that was fixed on the day it was discovered",
+                    "A vulnerability that takes zero days to exploit",
+                    "A vulnerability that is exploited before developers have released a patch",
+                    "A vulnerability that only affects new installations"
+                ],
+                "correctAnswer": 2,
+                "explanation": "A zero-day vulnerability is a software security flaw that is exploited by attackers before the vendor is aware of it or has had an opportunity to fix it. The term 'zero-day' refers to the fact that developers have 'zero days' to address the vulnerability because it's already being exploited.",
+                "weight": 1
+            },
+            {
+                "question": "What is a 'supply chain attack' in the context of software updates?",
+                "options": [
+                    "Attacking a company by targeting its suppliers",
+                    "Compromising software update mechanisms to distribute malware",
+                    "Blocking access to software update servers",
+                    "Stealing software before it's released"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A supply chain attack in software updates involves attackers compromising the software distribution channel or update infrastructure rather than the end-user directly. By inserting malicious code into legitimate update packages or compromising update servers, attackers can leverage trusted delivery mechanisms to distribute malware to many victims simultaneously.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following is the MOST secure approach to managing software updates in an enterprise environment?",
+                "options": [
+                    "Installing all updates immediately as they're released",
+                    "Never updating to avoid breaking critical systems",
+                    "Using a staged deployment process with testing and validation before full deployment",
+                    "Allowing each user to decide when to update their systems"
+                ],
+                "correctAnswer": 2,
+                "explanation": "A staged deployment process balances security and stability. It involves testing updates in a controlled environment, deploying to a small pilot group, validating compatibility with business systems, creating rollback plans, and then deploying broadly following a planned schedule. This ensures critical security updates are applied while minimizing the risk of updates breaking essential business systems.",
+                "weight": 1
+    },
+    {
+                "question": "Why is proper device disposal important for security?",
+                "options": [
+                    "To get a tax deduction for donating old equipment",
+                    "To prevent environmental damage from electronic waste",
+                    "To prevent sensitive data from being recovered from discarded devices",
+                    "To get refunds from device manufacturers"
+                ],
+                "correctAnswer": 2,
+                "explanation": "When devices are discarded, sold, or recycled, any data remaining on them could be recovered by someone else. Proper device disposal involves securely erasing all data to ensure sensitive information isn't compromised, even if the physical device changes hands.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following methods is NOT sufficient for securely wiping data from a hard drive before disposal?",
+                "options": [
+                    "Using the operating system's built-in delete function",
+                    "Using specialized data wiping software that overwrites data multiple times",
+                    "Physical destruction of the drive",
+                    "Full disk encryption followed by discarding the encryption key"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Simply deleting files using the operating system's delete function only removes the file references from the file system index but doesn't actually erase the data, which can be recovered using forensic tools. Secure wiping requires overwriting the actual data sectors, encryption, or physical destruction.",
+                "weight": 1
+            },
+            {
+                "question": "What is the difference between a 'quick format' and a 'secure erase' when preparing a drive for disposal?",
+                "options": [
+                    "Quick format is faster but works just as well",
+                    "Quick format only deletes the file table while secure erase overwrites all data",
+                    "Quick format works on all drives while secure erase only works on SSDs",
+                    "Quick format is an older technology no longer in use"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A quick format only resets the file table (the index that tracks where files are stored) but leaves the actual data intact on the storage media. A secure erase actively overwrites all sectors of the drive with random data or zeros, making the original data unrecoverable even with forensic tools.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following devices might contain persistent data that users often forget about when disposing of electronics?",
+                "options": [
+                    "Printers and multifunction devices with internal storage",
+                    "Network routers and switches with configuration files",
+                    "Smart home devices with saved credentials",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Many devices beyond computers and phones store sensitive data. Printers often store copies of documents in internal memory or hard drives. Network equipment stores passwords and network configurations. Smart devices contain WiFi credentials, account information, and sometimes voice recordings or other personal data. A comprehensive disposal policy must address all these devices.",
+                "weight": 1
+    },
+    {
+                "question": "What is RFID technology?",
+                "options": [
+                    "A type of wireless network similar to WiFi",
+                    "Radio Frequency Identification - technology that uses radio waves to read and capture information stored on a tag",
+                    "A secure remote login protocol",
+                    "A database system for storing identification data"
+                ],
+                "correctAnswer": 1,
+                "explanation": "RFID (Radio Frequency Identification) is a technology that uses electromagnetic fields to automatically identify and track tags attached to objects. The tags contain electronically stored information and can be passive (powered by the reader) or active (with their own power source).",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following items commonly contains RFID technology?",
+                "options": [
+                    "Credit cards with contactless payment capabilities",
+                    "Building access keycards",
+                    "Passports and other identity documents",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "RFID technology is used in many everyday items, including contactless payment cards, access control systems, modern passports (known as ePassports), inventory tracking, pet identification microchips, and transit payment cards.",
+                "weight": 1
+            },
+            {
+                "question": "What is an RFID skimming attack?",
+                "options": [
+                    "Using specialized software to guess RFID passwords",
+                    "Physically stealing RFID-enabled devices",
+                    "Using an unauthorized reader to secretly read RFID cards or tags from a distance",
+                    "Jamming RFID frequencies to cause denial of service"
+                ],
+                "correctAnswer": 2,
+                "explanation": "RFID skimming involves using an unauthorized RFID reader to secretly collect data from RFID-enabled cards or devices without the owner's knowledge. Attackers can potentially read the data from cards in a victim's wallet or pocket by bringing a concealed reader near them.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following is the MOST effective way to protect RFID-enabled cards from unauthorized scanning?",
+                "options": [
+                    "Wrapping them in aluminum foil",
+                    "Storing them in RFID-blocking wallets or sleeves that contain shielding material",
+                    "Keeping them in a regular wallet",
+                    "Deactivating them when not in use"
+                ],
+                "correctAnswer": 1,
+                "explanation": "RFID-blocking wallets, sleeves, or cases contain metallic materials that create a Faraday cage, preventing radio signals from reaching or leaving the cards inside. While aluminum foil can work in a pinch, purpose-made RFID-blocking products are more durable, reliable, and practical for everyday use.",
+                "weight": 1
+            },
+            {
+                "question": "What attack allows someone to relay RFID signals from a legitimate card to another location to gain unauthorized access?",
+                "options": [
+                    "RFID cloning",
+                    "Brute force attack",
+                    "Relay attack",
+                    "Side-channel attack"
+                ],
+                "correctAnswer": 2,
+                "explanation": "A relay attack uses two devices: one near the victim's RFID card and another near the legitimate reader. The first device reads the signals from the victim's card and relays them in real-time to the second device, which emulates the card to the legitimate reader. This allows attackers to use a victim's credentials without actually possessing or cloning their card.",
+                "weight": 1
+    },
+    {
+                "question": "What is social engineering in the context of cybersecurity?",
+                "options": [
+                    "Using social media for marketing purposes",
+                    "Designing user interfaces for social networking sites",
+                    "Psychological manipulation to trick people into revealing confidential information or performing actions that compromise security",
+                    "Engineering software for social media platforms"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Social engineering involves manipulating people into breaking normal security procedures and divulging sensitive information or performing actions that help an attacker. Rather than exploiting technical vulnerabilities, social engineering exploits human psychology and trust.",
+                "weight": 1
+            },
+            {
+                "question": "You receive a phone call from someone claiming to be from IT support who needs your password to fix an urgent server issue. What should you do?",
+                "options": [
+                    "Provide your password since it's an urgent issue",
+                    "Refuse to provide your password and report the incident to your actual IT department",
+                    "Give them a hint to your password instead",
+                    "Ask them to call back later when you're less busy"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Legitimate IT staff should never ask for your password. This is a classic social engineering technique called pretexting, where the attacker creates a fabricated scenario to extract information. Always refuse such requests and report them immediately to your security team.",
+                "weight": 1
+            },
+            {
+                "question": "Which social engineering technique involves creating a false sense of urgency to pressure a victim into acting quickly without proper verification?",
+                "options": [
+                    "Pretexting",
+                    "Baiting",
+                    "Quid pro quo",
+                    "Creating artificial time constraints"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Creating artificial time constraints is a powerful social engineering tactic where attackers pressure victims by suggesting something bad will happen if they don't act quickly, or that an opportunity will be lost. This urgency reduces critical thinking and increases the likelihood that victims will bypass normal security protocols.",
+                "weight": 1
+            },
+            {
+                "question": "What is 'tailgating' in the context of physical social engineering?",
+                "options": [
+                    "Following someone too closely on the highway",
+                    "Sending repeated emails until someone responds",
+                    "Gaining unauthorized physical access by following someone with legitimate access through a secure door",
+                    "Analyzing someone's social media posts to gather intelligence"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Tailgating (also called piggybacking) is a physical social engineering tactic where an unauthorized person follows an authorized person through a secure access point. The attacker might pretend to be carrying heavy items, fake having forgotten their access card, or simply rely on the politeness of the authorized person to hold the door open.",
+                "weight": 1
+            },
+            {
+                "question": "Which advanced social engineering technique involves studying a target's routine, preferences, and psychological traits to craft highly personalized attacks?",
+                "options": [
+                    "Vishing",
+                    "SMiShing",
+                    "Cognitive hacking",
+                    "Preloading"
+                ],
+                "correctAnswer": 2,
+                "explanation": "Cognitive hacking involves deeply analyzing a target's psychological traits, biases, emotional state, and decision-making patterns to create highly tailored attacks. By understanding how the target thinks and what motivates them, attackers can craft manipulations that exploit specific cognitive vulnerabilities unique to that individual, making detection extremely difficult.",
+                "weight": 1
+    },
+    {
+                "question": "What is a common hiding place for covert surveillance cameras?",
+                "options": [
+                    "Inside smoke detectors",
+                    "Within clock radios or alarm clocks",
+                    "Behind false air vents or electrical outlets",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Covert cameras can be hidden in virtually any everyday object. Common hiding places include smoke detectors, clocks, electrical outlets, air vents, picture frames, USB chargers, and even screws or light bulbs. Modern spy cameras are extremely small and can be concealed in almost any object.",
+                "weight": 1
+            },
+            {
+                "question": "Which method can help detect hidden cameras in a room?",
+                "options": [
+                    "Turning off the lights and looking for small LED lights",
+                    "Using the flashlight on your phone to look for reflections from camera lenses",
+                    "Using a radio frequency (RF) detector to find wireless transmitting devices",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Multiple methods can help detect hidden cameras. Looking for unusual LED lights when the room is dark can reveal powered devices, scanning for reflections from camera lenses works for optical detection, and using RF detectors can identify wireless cameras transmitting video signals.",
+                "weight": 1
+            },
+            {
+                "question": "What is a 'bug sweep' in the context of countersurveillance?",
+                "options": [
+                    "Removing insects from sensitive areas",
+                    "A systematic search for hidden surveillance devices using specialized equipment",
+                    "Removing malware from computer systems",
+                    "Testing for software vulnerabilities"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A bug sweep is a systematic inspection of an area to detect covert surveillance devices ('bugs'). It typically uses multiple detection techniques including RF spectrum analyzers, non-linear junction detectors, thermal imaging, and physical inspection to identify hidden cameras, microphones, and transmitters.",
+                "weight": 1
+            },
+            {
+                "question": "Why might a hidden camera not be detectable using a standard RF detector?",
+                "options": [
+                    "The camera is too small",
+                    "The camera uses wired connections instead of wireless transmission",
+                    "The camera only records to local storage and transmits in scheduled bursts",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Modern spy cameras use various techniques to avoid detection. Some are extremely miniaturized, making visual detection difficult. Others use wired connections instead of RF transmission. Advanced devices may store footage locally and only transmit at scheduled times or when triggered, making RF detection ineffective unless scanning occurs during transmission periods.",
+                "weight": 1
+            },
+            {
+                "question": "What is a Non-Linear Junction Detector (NLJD) used for in professional counter-surveillance?",
+                "options": [
+                    "Finding hidden cameras based on their heat signature",
+                    "Detecting electronic components even when they're not powered or transmitting",
+                    "Analyzing network traffic for suspicious data transmissions",
+                    "Breaking encryption on surveillance devices"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A Non-Linear Junction Detector (NLJD) works by emitting radio frequency signals and analyzing the harmonics returned by semiconductor components in electronic devices. This allows it to detect electronic circuitry even when devices are powered off, not transmitting, or well-shielded against other detection methods, making it effective for finding sophisticated surveillance equipment.",
+                "weight": 1
+    },
+    {
+                "question": "What is voice cloning technology?",
+                "options": [
+                    "Software that allows multiple people to speak simultaneously on a call",
+                    "Technology that can create a synthetic version of a person's voice by analyzing samples of their speech",
+                    "A method for improving voice clarity on phone calls",
+                    "Software that translates voice into different languages"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Voice cloning technology uses artificial intelligence to analyze samples of a person's voice and create a synthetic model capable of generating new speech in that person's voice, even saying things the person never actually said.",
+                "weight": 1
+            },
+            {
+                "question": "What is a deepfake?",
+                "options": [
+                    "A particularly sophisticated phishing attack",
+                    "Synthetic media where a person's likeness is replaced with someone else's using AI",
+                    "A type of encryption that's difficult to break",
+                    "A hacking technique that gains deep access to systems"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Deepfakes are synthetic media created using artificial intelligence where existing images or videos are combined with other content to create fabricated media that appears authentic. The term typically refers to convincing images or videos that show people saying or doing things they never actually said or did.",
+                "weight": 1
+            },
+            {
+                "question": "You receive an urgent voicemail from your CEO asking you to wire money to a new account. What should you do?",
+                "options": [
+                    "Immediately wire the money as requested",
+                    "Verify the request through a different channel before taking action",
+                    "Forward the voicemail to your colleagues to get their opinions",
+                    "Ignore the request as it's probably a scam"
+                ],
+                "correctAnswer": 1,
+                "explanation": "This scenario describes a potential voice phishing (vishing) attack potentially using voice cloning. Even if the voice sounds exactly like your CEO, you should always verify unusual requests, especially those involving financial transactions, through a different communication channel directly with the person purportedly making the request.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following is the strongest verification method to protect against voice cloning attacks?",
+                "options": [
+                    "Asking for the caller's employee ID number",
+                    "Using pre-established verification questions",
+                    "Implementing a multi-channel authentication system with physical tokens or biometrics",
+                    "Calling the person back on their known number"
+                ],
+                "correctAnswer": 2,
+                "explanation": "A multi-channel authentication system that requires verification across different communication methods and uses something the person has (like a physical security token) or something they are (biometrics) provides the strongest protection. This approach ensures that even if one channel is compromised through voice cloning or other means, the attacker would need to breach multiple verification methods simultaneously.",
+                "weight": 1
+            },
+            {
+                "question": "What emerging technology is being developed to detect synthetic audio created by voice cloning?",
+                "options": [
+                    "Audio watermarking",
+                    "Behavioral biometric analysis of speech patterns",
+                    "Digital signatures for audio files",
+                    "All of the above"
+                ],
+                "correctAnswer": 3,
+                "explanation": "Multiple technologies are being developed to combat synthetic audio: Audio watermarking embeds inaudible signals in legitimate recordings that can verify authenticity; behavioral biometric analysis examines micro-patterns in speech that AI currently struggles to replicate; and digital signatures can cryptographically verify the source and integrity of audio files. A comprehensive approach uses all these methods together.",
+                "weight": 1
+    },
+    {
+                "question": "What is a database breach?",
+                "options": [
+                    "When a database server crashes and loses data",
+                    "Unauthorized access to and extraction of sensitive information from a database",
+                    "When database queries run too slowly",
+                    "A developer accidentally deleting database tables"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A database breach occurs when an unauthorized person gains access to a database and views, copies, steals, alters, or deletes sensitive information. These breaches can expose personal information, credentials, financial data, and other confidential records.",
+                "weight": 1
+            },
+            {
+                "question": "Which of the following data is typically most valuable to attackers in a database breach?",
+                "options": [
+                    "Names and physical addresses",
+                    "Email addresses",
+                    "Passwords and authentication credentials",
+                    "Public information like company directories"
+                ],
+                "correctAnswer": 2,
+                "explanation": "While all personal information has value, authentication credentials (especially passwords) are particularly valuable because many people reuse passwords across multiple services. This means a breach of one service can potentially give attackers access to victims' accounts on other, more sensitive services like banking or email.",
+                "weight": 1
+            },
+            {
+                "question": "What is credential stuffing?",
+                "options": [
+                    "Creating fake credentials to gain system access",
+                    "Using stolen username/password pairs from one breach to attempt login on other services",
+                    "Adding unnecessary credentials to a database to confuse attackers",
+                    "Forcing a system to create new user accounts"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Credential stuffing is an attack where automated tools use stolen username and password combinations from one breach to attempt login on other websites or services. This attack exploits the common practice of password reuse across multiple accounts and can be highly effective at gaining unauthorized access to accounts on unrelated services.",
+                "weight": 1
+            },
+            {
+                "question": "What is the best way to protect yourself after your credentials were exposed in a database breach?",
+                "options": [
+                    "Do nothing, breaches happen all the time",
+                    "Change your password on the breached site only",
+                    "Change your password on all sites where you used the same or similar passwords and enable 2FA where available",
+                    "Delete your account on the breached site"
+                ],
+                "correctAnswer": 2,
+                "explanation": "When your credentials are exposed in a breach, you should change your password on the affected site and any other site where you used the same or similar password. Additionally, enabling two-factor authentication (2FA) wherever available provides an extra layer of security even if your password is compromised in the future.",
+                "weight": 1
+            },
+            {
+                "question": "What is a 'combo list' in the context of database breaches?",
+                "options": [
+                    "A list of companies that have been breached",
+                    "A compiled dataset of username/password pairs from multiple breaches",
+                    "A list of the most common passwords detected in breaches",
+                    "A combination of personal data like names, addresses, and phone numbers"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A combo list is a compiled dataset of username/password combinations aggregated from multiple data breaches. These lists are traded on dark web forums and used for credential stuffing attacks. What makes combo lists particularly dangerous is that they combine data from many different breaches, creating comprehensive collections of compromised credentials.",
+                "weight": 1
+            }
+]

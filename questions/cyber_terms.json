@@ -1,0 +1,710 @@
+[
+    {
+        "question": "What does the term 'Dorking' refer to in cybersecurity?",
+        "options": [
+            "Deliberately causing software failures",
+            "Using advanced search operators to find sensitive information",
+            "Creating fake online identities",
+            "Modifying hardware for unauthorized purposes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dorking (or Google Dorking) refers to using advanced search engine operators to find sensitive information that is publicly accessible but not intended to be discovered easily.",
+        "weight": 1
+    },
+    {
+        "question": "What cybersecurity technique involves using advanced search engine parameters to find sensitive information?",
+        "options": [
+            "Phishing",
+            "Dorking",
+            "OSINT",
+            "War Driving"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dorking (or Google Dorking) is a technique that uses advanced search engine operators to find sensitive information that is publicly accessible but not intended to be discovered easily.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Phishing' refer to in cybersecurity?",
+        "options": [
+            "Scanning wireless networks for vulnerabilities",
+            "Attempting to acquire sensitive information by masquerading as a trustworthy entity",
+            "Breaking digital rights management protections",
+            "Manipulating IP addresses to hide origin"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Phishing refers to fraudulent attempts to obtain sensitive information such as usernames, passwords, and credit card details by disguising as a trustworthy entity in electronic communications.",
+        "weight": 1
+    },
+    {
+        "question": "What is the primary goal of phishing attacks?",
+        "options": [
+            "To overload web servers with traffic",
+            "To trick users into revealing sensitive information",
+            "To encrypt files for ransom",
+            "To gain physical access to secure facilities"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Phishing attacks aim to deceive users into providing sensitive information like passwords and credit card details by impersonating trustworthy entities.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Social Engineering' refer to in cybersecurity?",
+        "options": [
+            "Designing social media platforms securely",
+            "The psychological manipulation of people to perform actions or divulge information",
+            "Engineering secure social networks",
+            "Using social media for network reconnaissance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Social Engineering refers to the psychological manipulation of people into performing actions or divulging confidential information. It relies on human error rather than technical hacking techniques.",
+        "weight": 1
+    },
+    {
+        "question": "Which of the following best describes 'Social Engineering' in cybersecurity?",
+        "options": [
+            "Writing efficient social media algorithms",
+            "Manipulating people into breaking security procedures",
+            "Developing secure social networks",
+            "Creating fake social media profiles for marketing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Social engineering involves psychological manipulation to trick people into making security mistakes or giving away sensitive information.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'SQL Injection' refer to in cybersecurity?",
+        "options": [
+            "A method to optimize database performance",
+            "A technique where malicious SQL code is inserted into database queries",
+            "A secure query language for databases",
+            "A database testing methodology"
+        ],
+        "correctAnswer": 1,
+        "explanation": "SQL Injection is a code injection technique where an attacker inserts malicious SQL statements into entry fields for execution by the backend database.",
+        "weight": 1
+    },
+    {
+        "question": "What type of attack inserts malicious code into database queries through website input fields?",
+        "options": [
+            "DDoS Attack",
+            "SQL Injection",
+            "Man-in-the-Middle Attack",
+            "Brute Force Attack"
+        ],
+        "correctAnswer": 1,
+        "explanation": "SQL Injection is an attack where malicious SQL statements are inserted into entry fields, allowing attackers to manipulate the database behind a website.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'MITM' stand for in cybersecurity?",
+        "options": [
+            "Multiple Internet Threat Management",
+            "Malware in the Middle",
+            "Man-in-the-Middle",
+            "Monitored Internet Traffic Management"
+        ],
+        "correctAnswer": 2,
+        "explanation": "MITM stands for Man-in-the-Middle, referring to an attack where the attacker secretly relays and possibly alters communications between two parties who believe they are directly communicating with each other.",
+        "weight": 1
+    },
+    {
+        "question": "In a Man-in-the-Middle (MITM) attack, what is the attacker doing?",
+        "options": [
+            "Sending excessive traffic to overwhelm servers",
+            "Intercepting communications between two parties",
+            "Guessing passwords through repeated attempts",
+            "Encrypting data and demanding ransom"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In a MITM attack, the attacker secretly intercepts and possibly alters communications between two parties who believe they are directly communicating with each other.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'DDoS' stand for in cybersecurity?",
+        "options": [
+            "Digital Denial of Service",
+            "Distributed Denial of Service",
+            "Domain Defender of Security",
+            "Data Driven Operating System"
+        ],
+        "correctAnswer": 1,
+        "explanation": "DDoS stands for Distributed Denial of Service, an attack where multiple compromised systems are used to target a single system causing a denial of service for users of the targeted resource.",
+        "weight": 1
+    },
+    {
+        "question": "Which attack aims to make an online service unavailable by overwhelming it with traffic from multiple sources?",
+        "options": [
+            "Phishing",
+            "SQL Injection",
+            "DDoS (Distributed Denial of Service)",
+            "Man-in-the-Middle"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A DDoS attack involves multiple compromised systems (often infected with malware) flooding the bandwidth or resources of a targeted system, overwhelming it and making it unavailable.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'War Driving' refer to in cybersecurity?",
+        "options": [
+            "Hacking into military systems",
+            "Driving vehicles with advanced cyber weapons",
+            "Searching for unsecured wireless networks while in a moving vehicle",
+            "Rapidly deploying security patches during a cyber war"
+        ],
+        "correctAnswer": 2,
+        "explanation": "War Driving refers to the act of searching for Wi-Fi wireless networks by a person in a moving vehicle using a portable computer or specialized device to locate unsecured networks.",
+        "weight": 1
+    },
+    {
+        "question": "What is 'War Driving' in cybersecurity?",
+        "options": [
+            "Developing malware during times of international conflict",
+            "Driving military vehicles with cybersecurity equipment",
+            "Searching for vulnerable Wi-Fi networks while in a moving vehicle",
+            "Racing to fix security vulnerabilities before they're exploited"
+        ],
+        "correctAnswer": 2,
+        "explanation": "War Driving involves searching for Wi-Fi wireless networks by a person in a moving vehicle using a portable computer or specialized device.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'OSINT' stand for in cybersecurity?",
+        "options": [
+            "Open Source Intelligence",
+            "Operating System Integration",
+            "Online Security Interface",
+            "Organized Systems for International Networks"
+        ],
+        "correctAnswer": 0,
+        "explanation": "OSINT stands for Open Source Intelligence, which is data collected from publicly available sources to be used in an intelligence context.",
+        "weight": 1
+    },
+    {
+        "question": "What does OSINT involve in cybersecurity practices?",
+        "options": [
+            "Creating open-source security software",
+            "Gathering intelligence from publicly available sources",
+            "Opening secure international networks",
+            "Operating system internal testing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "OSINT (Open Source Intelligence) involves collecting information from publicly available sources such as social media, websites, and public records for intelligence purposes.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'HUMINT' stand for in intelligence gathering?",
+        "options": [
+            "Human Understanding Methods in Intelligence Networks",
+            "Human Intelligence",
+            "Humanitarian Intelligence Network",
+            "Human Unified Monitoring Intelligence Network"
+        ],
+        "correctAnswer": 1,
+        "explanation": "HUMINT stands for Human Intelligence, which is intelligence gathered through interpersonal contact and human sources rather than technical means.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'SIGINT' stand for in intelligence gathering?",
+        "options": [
+            "Signal Intelligence",
+            "Signature Intelligence",
+            "Signals Intelligence",
+            "Significant Intelligence"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SIGINT stands for Signals Intelligence, which is intelligence-gathering by interception of signals, whether between people, between machines, or a combination of both.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'DARKINT' refer to in intelligence gathering?",
+        "options": [
+            "Dark Room Intelligence",
+            "Dark Web Intelligence",
+            "Dark Network Intelligence",
+            "Dark Operations Intelligence"
+        ],
+        "correctAnswer": 1,
+        "explanation": "DARKINT refers to Dark Web Intelligence, which is intelligence gathered from hidden services and websites not indexed by standard search engines, often requiring specialized tools like Tor to access.",
+        "weight": 1
+    },
+    {
+        "question": "Which of the following is NOT a standard type of intelligence gathering in cybersecurity?",
+        "options": [
+            "HUMINT (Human Intelligence)",
+            "SIGINT (Signals Intelligence)",
+            "DARKINT (Dark Web Intelligence)",
+            "CLICKINT (Click-based Intelligence)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "CLICKINT is not a standard intelligence category. The others are legitimate: HUMINT (from human sources), SIGINT (from intercepted signals), and DARKINT (from dark web sources).",
+        "weight": 2
+    },
+    {
+        "question": "What does 'Zero-Day' refer to in cybersecurity?",
+        "options": [
+            "The first day a software product is released",
+            "A vulnerability that has existed for zero days",
+            "A vulnerability unknown to the software vendor that has zero days of protection",
+            "A type of malware that deletes all data on day zero"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Zero-Day (or 0-day) refers to a previously unknown vulnerability that hackers can exploit before the software vendor knows about it and creates a patch, leaving zero days for protection.",
+        "weight": 2
+    },
+    {
+        "question": "What is a 'Zero-Day' vulnerability?",
+        "options": [
+            "A vulnerability that has existed for less than 24 hours",
+            "A vulnerability with zero potential impact",
+            "A vulnerability that is known to the attacker but not yet known to the software developer or vendor",
+            "A vulnerability that can be exploited in zero seconds"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Zero-Day vulnerability is a software security flaw that is unknown to those who should be interested in its mitigation, like the vendor, giving attackers the advantage as no patch exists yet.",
+        "weight": 2
+    },
+    {
+        "question": "What does the term 'Payload' refer to in malware context?",
+        "options": [
+            "The size of the malware file",
+            "The number of systems infected",
+            "The part of malware that performs the actual malicious action",
+            "The price demanded in ransomware"
+        ],
+        "correctAnswer": 2,
+        "explanation": "In malware context, the payload refers to the part of the code that performs the actual malicious activity, such as stealing data, encrypting files, or creating a backdoor.",
+        "weight": 1
+    },
+    {
+        "question": "What is a 'Payload' in the context of malware?",
+        "options": [
+            "The price paid for ransomware removal",
+            "The component of malware that performs the malicious action",
+            "The weight of data stolen in a breach",
+            "The email attachment containing a virus"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In malware, the payload is the component that performs the actual malicious action, such as encrypting files or stealing data, after the malware has successfully infected a system.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Botnet' refer to in cybersecurity?",
+        "options": [
+            "A network of security robots",
+            "An automated network defense system",
+            "A network of compromised computers controlled remotely",
+            "A collection of security bots that scan for vulnerabilities"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A botnet refers to a collection of internet-connected devices that have been infected with malware allowing them to be controlled remotely by an attacker, known as the bot herder, without the owners' knowledge.",
+        "weight": 1
+    },
+    {
+        "question": "What is a 'Botnet'?",
+        "options": [
+            "A network of legitimate automated web crawlers",
+            "A network of infected computers controlled by an attacker",
+            "A set of robots used for physical security",
+            "A type of neural network used for cybersecurity defense"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A botnet is a network of compromised computers infected with malware that allows them to be controlled remotely without the owners' knowledge, often used for DDoS attacks or spam distribution.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Rootkit' refer to in cybersecurity?",
+        "options": [
+            "Software that gives administrator access to a system",
+            "A toolkit used to gain root-level access to networks",
+            "Malware that provides privileged access while hiding its existence",
+            "A diagnostic tool for checking system root directories"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A rootkit is a collection of software tools that enable an unauthorized user to gain control of a computer system without being detected by providing privileged (root-level) access.",
+        "weight": 1
+    },
+    {
+        "question": "What type of malware conceals its existence and actions from users and security programs?",
+        "options": [
+            "Ransomware",
+            "Adware",
+            "Rootkit",
+            "Worm"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A rootkit is designed to conceal certain processes or programs from normal detection methods and provides continued privileged access to a computer while actively hiding its presence.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Ransomware' refer to in cybersecurity?",
+        "options": [
+            "Software that generates random security keys",
+            "Malware that demands payment after encrypting the victim's files",
+            "A security tool that manages ransom situations",
+            "Software that randomizes access to secure servers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ransomware is a type of malicious software designed to block access to a computer system or data, typically by encrypting it, until a sum of money (ransom) is paid.",
+        "weight": 1
+    },
+    {
+        "question": "Which malware encrypts a victim's files and demands payment for the decryption key?",
+        "options": [
+            "Spyware",
+            "Ransomware",
+            "Adware",
+            "Keylogger"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ransomware is malicious software that encrypts the victim's files, making them inaccessible, and demands a ransom payment to restore access.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Cryptojacking' refer to in cybersecurity?",
+        "options": [
+            "Using encryption to secure cryptocurrency wallets",
+            "Breaking into cryptocurrency exchanges",
+            "The unauthorized use of a computer to mine cryptocurrency",
+            "Creating new cryptocurrencies through hacking"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Cryptojacking is the unauthorized use of someone's computer to mine cryptocurrency. Hackers do this by either getting the victim to click on a malicious link that loads crypto mining code or by infecting a website with JavaScript code that executes once loaded in the victim's browser.",
+        "weight": 2
+    },
+    {
+        "question": "What is 'Cryptojacking'?",
+        "options": [
+            "Breaking encryption algorithms",
+            "Unauthorized use of computing resources to mine cryptocurrency",
+            "Stealing cryptocurrency wallets",
+            "Encrypting cryptocurrency transactions"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cryptojacking is the unauthorized use of someone else's computer to mine cryptocurrency. Hackers either use malicious code injected into websites or malware to hijack computing resources.",
+        "weight": 2
+    },
+    {
+        "question": "What does the term 'Fileless Malware' refer to in cybersecurity?",
+        "options": [
+            "Malware too small to be considered a file",
+            "Malware that deletes all files on a system",
+            "Malicious code that operates entirely in memory without writing files to disk",
+            "Malware that damages file systems"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Fileless malware refers to malicious code that exists dynamically and only in memory, rather than being stored as a file on disk. This makes it harder to detect using traditional methods that scan the file system.",
+        "weight": 2
+    },
+    {
+        "question": "What is 'Fileless Malware'?",
+        "options": [
+            "Malware that doesn't require an internet connection",
+            "Malware that operates entirely in memory without writing files to disk",
+            "Malware that deletes all files on a system",
+            "Malware that can't be transferred via files"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Fileless malware resides in memory rather than installing files on a system, making it harder to detect by traditional security solutions that scan for suspicious files.",
+        "weight": 2
+    },
+    {
+        "question": "What is the meaning of 'Staged' versus 'Stageless' in the context of malware payloads?",
+        "options": [
+            "Staged has visible effects, Stageless operates silently",
+            "Staged requires user action, Stageless is automatic",
+            "Staged delivers the payload in multiple parts, Stageless in a single package",
+            "Staged targets multiple systems, Stageless targets one system"
+        ],
+        "correctAnswer": 2,
+        "explanation": "In malware context, 'Staged' refers to payloads that are delivered in multiple parts or stages, with an initial stager that then downloads the full payload. 'Stageless' payloads deliver the entire malicious code in a single package.",
+        "weight": 2
+    },
+    {
+        "question": "In the context of malware, what is the difference between 'Staged' and 'Stageless' payloads?",
+        "options": [
+            "Staged payloads require user interaction, stageless don't",
+            "Staged payloads download in multiple parts, stageless in a single transfer",
+            "Staged payloads target multiple systems, stageless target only one",
+            "Staged payloads can be removed, stageless are permanent"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Staged payloads deliver an initial small stager that then pulls down the full payload in stages, while stageless payloads deliver the entire malicious code in one package.",
+        "weight": 2
+    },
+    {
+        "question": "What does the term 'Brute Force Attack' refer to in cybersecurity?",
+        "options": [
+            "Physical attacks on data centers",
+            "Using raw computing power to try every possible key or password combination",
+            "Aggressively flooding a network with traffic",
+            "Forcefully extracting data from corrupted drives"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A brute force attack refers to a cryptographic hack that relies on trying every possible combination of characters until the correct password or key is found. It's a trial and error method used to obtain information such as passwords or PINs.",
+        "weight": 1
+    },
+    {
+        "question": "What is a 'Brute Force Attack'?",
+        "options": [
+            "Using physical force to gain access to secure facilities",
+            "Overwhelming a system with traffic until it crashes",
+            "Systematically checking all possible passwords until the correct one is found",
+            "Forcing users through intimidation to reveal their credentials"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A brute force attack involves systematically trying all possible combinations of passwords or encryption keys until the correct one is discovered.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'RAT' stand for in cybersecurity?",
+        "options": [
+            "Remote Access Terminal",
+            "Remote Administration Tool",
+            "Remote Access Trojan",
+            "Rapid Attack Technology"
+        ],
+        "correctAnswer": 2,
+        "explanation": "RAT stands for Remote Access Trojan, a type of malware that provides the attacker with unauthorized remote access and control over a victim's computer.",
+        "weight": 1
+    },
+    {
+        "question": "What is the main purpose of a 'RAT' (Remote Access Trojan) in cybersecurity?",
+        "options": [
+            "To encrypt files for ransom",
+            "To provide the attacker with remote control of the victim's computer",
+            "To automatically spread to other networked computers",
+            "To mine cryptocurrency on infected systems"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A Remote Access Trojan (RAT) is designed to provide the attacker with administrative control over the victim's computer, allowing them to monitor user behavior, access confidential information, alter files, and use the machine as a launching point for further attacks.",
+        "weight": 1
+    },
+    {
+        "question": "Which of the following is NOT a well-known RAT (Remote Access Trojan)?",
+        "options": [
+            "Gh0st",
+            "DarkComet",
+            "FireEye",
+            "Poison Ivy"
+        ],
+        "correctAnswer": 2,
+        "explanation": "FireEye is actually a cybersecurity company and not a RAT. Gh0st, DarkComet, and Poison Ivy are all well-known Remote Access Trojans.",
+        "weight": 2
+    },
+    {
+        "question": "What does the term 'Firewall' refer to in cybersecurity?",
+        "options": [
+            "A physical barrier protecting server rooms from fire",
+            "A network security system that monitors and filters traffic",
+            "A cooling system for overheated servers",
+            "An emergency shutdown protocol"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A firewall is a network security device or software that monitors and filters incoming and outgoing network traffic based on an organization's previously established security policies.",
+        "weight": 1
+    },
+    {
+        "question": "What is a 'Firewall' in cybersecurity?",
+        "options": [
+            "Software that automatically extinguishes digital fires",
+            "A security system that monitors and controls incoming and outgoing network traffic",
+            "A physical barrier that prevents hackers from entering secure facilities",
+            "A backup system that activates when the main system fails"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules, acting as a barrier between a trusted network and untrusted networks.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'IDS' stand for in cybersecurity?",
+        "options": [
+            "Intrusion Detection System",
+            "Identity Security",
+            "Internet Defense System",
+            "Integrated Data Security"
+        ],
+        "correctAnswer": 0,
+        "explanation": "IDS stands for Intrusion Detection System, which is a device or software application that monitors a network or systems for malicious activity or policy violations.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'IPS' stand for in cybersecurity?",
+        "options": [
+            "Internet Protocol Security",
+            "Intrusion Prevention System",
+            "Identity Protection Service",
+            "Information Processing Standard"
+        ],
+        "correctAnswer": 1,
+        "explanation": "IPS stands for Intrusion Prevention System, which is a network security application that monitors network or system activities for malicious activity and takes action to prevent it, such as blocking traffic.",
+        "weight": 1
+    },
+    {
+        "question": "What is the primary difference between IDS and IPS systems?",
+        "options": [
+            "IDS is for internal networks, IPS is for public networks",
+            "IDS detects suspicious activity, IPS actively prevents threats",
+            "IDS is software-based, IPS is hardware-based",
+            "IDS is older technology, IPS is newer technology"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An Intrusion Detection System (IDS) identifies and logs potential security incidents, while an Intrusion Prevention System (IPS) can also actively block or prevent those incidents in real-time.",
+        "weight": 2
+    },
+    {
+        "question": "What does the term 'Honeypot' refer to in cybersecurity?",
+        "options": [
+            "A secured repository of valuable data",
+            "A system deliberately designed to attract attackers",
+            "A sweet spot in network security",
+            "A pot of honey used to trap digital bears"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A honeypot is a security mechanism that consists of a computer, data, or network site that appears to be part of a network but is actually isolated and monitored, designed to detect or deflect unauthorized access attempts.",
+        "weight": 1
+    },
+    {
+        "question": "What is a 'Honeypot' in cybersecurity?",
+        "options": [
+            "A sweet reward given to security professionals for finding vulnerabilities",
+            "A system designed to attract and trap attackers to study their methods",
+            "A repository of known malware samples",
+            "A database of security vulnerabilities"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A honeypot is a security mechanism that appears to be a legitimate part of the site or network but is actually isolated and monitored, designed to detect or deflect unauthorized access attempts.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'Yara' refer to in cybersecurity?",
+        "options": [
+            "Yet Another Recursive Algorithm",
+            "A pattern matching tool used for malware identification",
+            "Youth Advanced Research Association",
+            "Year Around Risk Assessment"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Yara is a tool aimed at helping malware researchers to identify and classify malware samples. It uses pattern matching to identify files or memory patterns that match specific rules defined by researchers.",
+        "weight": 2
+    },
+    {
+        "question": "What are 'Yara Rules' used for in cybersecurity?",
+        "options": [
+            "Defining network traffic routing",
+            "Identifying and classifying malware samples based on patterns",
+            "Managing user access permissions",
+            "Optimizing firewall performance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Yara Rules are used to identify and classify malware samples or other files by creating descriptions based on textual or binary patterns within them.",
+        "weight": 2
+    },
+    {
+        "question": "What does the term 'White Hat Hacker' refer to in cybersecurity?",
+        "options": [
+            "Hackers who work only during daylight hours",
+            "Beginners who are still learning hacking techniques",
+            "Ethical hackers who find vulnerabilities to improve security",
+            "Hackers who specialize in medical systems"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A White Hat Hacker is an ethical computer hacker, or a computer security expert, who specializes in penetration testing and other testing methodologies to ensure the security of an organization's information systems.",
+        "weight": 1
+    },
+    {
+        "question": "Which term describes a security researcher who follows ethical principles?",
+        "options": [
+            "Black Hat Hacker",
+            "Script Kiddie",
+            "White Hat Hacker",
+            "Grey Hat Hacker"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A White Hat Hacker is an ethical security researcher who finds and reports vulnerabilities with permission and within legal boundaries, often helping organizations improve their security.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Hacktivism' refer to in cybersecurity?",
+        "options": [
+            "The act of hacking while exercising",
+            "The use of hacking for political or social causes",
+            "Activities that promote ethical hacking",
+            "Hacking techniques used by government activists"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Hacktivism refers to the use of computer-based techniques of hacking to achieve political or social goals. It's a blend of 'hack' and 'activism' where individuals use their hacking skills for political or social causes.",
+        "weight": 1
+    },
+    {
+        "question": "What is 'Hacktivism'?",
+        "options": [
+            "Using hacking for political or social activism",
+            "Teaching hacking techniques to beginners",
+            "Actively defending against hackers",
+            "Creating innovative hacking tools"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Hacktivism is the use of hacking techniques for political or social activism, often to promote free speech, human rights, or other causes.",
+        "weight": 1
+    },
+    {
+        "question": "What does the term 'Owned' (or 'Pwned') mean in hacker terminology?",
+        "options": [
+            "To have purchased a legitimate license",
+            "To have completely compromised a system",
+            "To have created a new security solution",
+            "To have identified a potential vulnerability"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In hacker terminology, to have 'owned' or 'pwned' a system means to have completely compromised it, gaining full control or access to the target system.",
+        "weight": 1
+    },
+    {
+        "question": "What does it mean when a system is 'Owned' in hacker terminology?",
+        "options": [
+            "The system is legally purchased",
+            "The system is completely compromised by an attacker",
+            "The system is properly licensed",
+            "The system is securely configured"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In hacker terminology, when a system is 'owned' (often written as 'pwned'), it means it has been completely compromised and is under the attacker's control.",
+        "weight": 1
+    },
+    {
+        "question": "What is 'Malvertising'?",
+        "options": [
+            "Advertising cybersecurity products",
+            "Using legitimate advertising networks to deliver malware",
+            "Falsely advertising software capabilities",
+            "Advertising on the dark web"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Malvertising is the use of online advertising to spread malware, typically by injecting malicious code into legitimate advertising networks.",
+        "weight": 1
+    },
+    {
+        "question": "What does 'MaaS' typically stand for in cybersecurity?",
+        "options": [
+            "Monitoring as a Service",
+            "Malware as a Service",
+            "Management as a Service",
+            "Migration as a Service"
+        ],
+        "correctAnswer": 1,
+        "explanation": "MaaS stands for Malware as a Service, a business model where malware and hacking tools are sold or rented to customers who lack technical skills but want to conduct cyberattacks.",
+        "weight": 2
+    },
+    {
+        "question": "What is a 'Wallet Drainer' in cryptocurrency security?",
+        "options": [
+            "A legal service that charges fees for cryptocurrency transactions",
+            "Malware designed to steal cryptocurrency by transferring funds from victims' wallets",
+            "A hardware device that physically secures cryptocurrency",
+            "Software that monitors wallet usage for suspicious activity"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A wallet drainer is malicious code or a smart contract designed to drain cryptocurrency funds from a victim's wallet, often by tricking users into approving malicious transactions.",
+        "weight": 2
+    }
+]
