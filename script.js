@@ -717,8 +717,8 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton = document.getElementById('next-btn');
     backToCategoriesButton = document.getElementById('back-to-categories-btn');
     resetButton = document.getElementById('reset-btn');
-    overallProgressStat = document.getElementById('overall-progress');
-    overallScoreStat = document.getElementById('overall-score');
+    overallProgressStat = document.getElementById('overall-progress-stat');
+    overallScoreStat = document.getElementById('overall-score-stat');
     rankBadge = document.getElementById('rank-badge');
     rankName = document.getElementById('rank-name');
     rankProgressBar = document.getElementById('rank-progress-bar');
