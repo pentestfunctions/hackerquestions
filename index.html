@@ -5,370 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Quiz</title>
-    <style>
-        :root {
-            /* Light theme (default) */
-            --primary-color: #2a4365;
-            --secondary-color: #4299e1;
-            --background-color: #f8fafc;
-            --card-background: #ffffff;
-            --text-color: #1a202c;
-            --correct-color: #48bb78;
-            --incorrect-color: #f56565;
-            --neutral-color: #a0aec0;
-        }
-
-        /* Dark theme */
-        [data-theme="dark"] {
-            --primary-color: #172a4e;
-            --secondary-color: #3182ce;
-            --background-color: #1a202c;
-            --card-background: #2d3748;
-            --text-color: #f7fafc;
-            --correct-color: #38a169;
-            --incorrect-color: #e53e3e;
-            --neutral-color: #718096;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            padding: 2rem;
-        }
-
-        .theme-switch {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-color);
-            z-index: 100;
-        }
-
-        .theme-toggle {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
-
-        .theme-toggle input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: var(--neutral-color);
-            transition: .4s;
-            border-radius: 34px;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked+.slider {
-            background-color: var(--secondary-color);
-        }
-
-        input:checked+.slider:before {
-            transform: translateX(26px);
-        }
-
-        .quiz-header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-
-        .quiz-title {
-            margin: 0;
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-
-        .stats-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 1rem;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .stat {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            font-weight: 500;
-        }
-
-        .rank-badge {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .quiz-card {
-            background-color: var(--card-background);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .question {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .question-weight {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            font-size: 0.8rem;
-            margin-left: 0.5rem;
-            vertical-align: middle;
-        }
-
-        .options {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .option {
-            padding: 1rem;
-            border: 2px solid var(--neutral-color);
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .option:hover {
-            background-color: rgba(66, 153, 225, 0.1);
-            border-color: var(--secondary-color);
-        }
-
-        .selected {
-            border-color: var(--secondary-color);
-            background-color: rgba(66, 153, 225, 0.1);
-        }
-
-        .correct {
-            border-color: var(--correct-color);
-            background-color: rgba(72, 187, 120, 0.1);
-        }
-
-        .incorrect {
-            border-color: var(--incorrect-color);
-            background-color: rgba(245, 101, 101, 0.1);
-        }
-
-        .feedback {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            border-radius: 5px;
-            display: none;
-        }
-
-        .feedback.correct {
-            background-color: rgba(72, 187, 120, 0.1);
-            color: var(--correct-color);
-        }
-
-        .feedback.incorrect {
-            background-color: rgba(245, 101, 101, 0.1);
-            color: var(--incorrect-color);
-        }
-
-        .btn {
-            background-color: var(--secondary-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: 1.5rem;
-        }
-
-        .btn:hover {
-            background-color: var(--primary-color);
-        }
-
-        .btn:disabled {
-            background-color: var(--neutral-color);
-            cursor: not-allowed;
-        }
-
-        .loading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-        }
-
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            border-top: 4px solid var(--secondary-color);
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .reset-section {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .reset-btn {
-            background-color: var(--neutral-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 0.5rem 1rem;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .reset-btn:hover {
-            background-color: #718096;
-        }
-
-        .rank-info {
-            margin-top: 2rem;
-            background-color: var(--card-background);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .rank-info h2 {
-            margin-top: 0;
-            color: var(--secondary-color);
-        }
-
-        .rank-progress {
-            width: 100%;
-            height: 10px;
-            background-color: var(--neutral-color);
-            border-radius: 5px;
-            margin: 1rem 0;
-            overflow: hidden;
-        }
-
-        .rank-progress-bar {
-            height: 100%;
-            background-color: var(--secondary-color);
-            border-radius: 5px;
-            transition: width 0.3s ease;
-        }
-
-        .next-rank {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            .quiz-header {
-                padding: 1rem;
-            }
-
-            .quiz-title {
-                font-size: 1.5rem;
-            }
-
-            .stats-container {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="theme-switch">
-        <span>🌞</span>
-        <label class="theme-toggle">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-        </label>
-        <span>🌙</span>
-    </div>
+<body class="dark-mode">
 
     <div class="container">
         <header class="quiz-header">
             <h1 class="quiz-title">Cybersecurity Quiz Challenge</h1>
-            <p>100% of the questions are available at the moment. Still have to adjust for inaccuracies and manually add questions we want</p>
+            <p>Test your cybersecurity knowledge across 38 specialized categories</p>
             <div class="stats-container">
-                <div class="stat" id="progress-stat">Progress: 0/0</div>
-                <div class="stat" id="score-stat">Score: 0/0</div>
+                <div class="stat" id="overall-progress-stat">Overall: 0/0</div>
+                <div class="stat" id="overall-score-stat">Total Score: 0/0</div>
                 <div class="rank-badge" id="rank-badge">
                     <span>Rank:</span>
                     <span id="rank-name">Newbie</span>
@@ -380,40 +28,70 @@
             <div class="spinner"></div>
         </div>
 
-        <div id="quiz-container" class="hidden">
+        <!-- Category Selection View -->
+        <div id="categories-view" class="hidden">
+            <div class="category-filter">
+                <button id="filter-all" class="filter-button active">All Categories</button>
+                <button id="filter-available" class="filter-button">Available</button>
+                <button id="filter-completed" class="filter-button">Completed</button>
+                <button id="filter-in-progress" class="filter-button">In Progress</button>
+            </div>
+            <div class="category-count" id="category-count">Showing all 38 categories</div>
+            <div class="categories-container" id="categories-container">
+            </div>
+        </div>
+
+        <div id="quiz-view" class="hidden">
             <div class="quiz-card">
+                <div id="category-indicator" class="category-indicator">Category</div>
                 <div id="question" class="question"></div>
                 <div id="options" class="options"></div>
                 <div id="feedback" class="feedback"></div>
-                <button id="next-btn" class="btn" disabled>Next Question</button>
-            </div>
-
-            <div class="rank-info">
-                <h2>Your Security Ranking</h2>
-                <div class="rank-progress">
-                    <div id="rank-progress-bar" class="rank-progress-bar" style="width: 0%"></div>
+                <div class="actions-container">
+                    <button id="back-to-categories-btn" class="btn-secondary">Back to Categories</button>
+                    <button id="next-btn" class="btn" disabled>Next Question</button>
                 </div>
-                <div class="next-rank">
-                    <span>Current: <strong id="current-rank">Newbie</strong></span>
-                    <span>Next: <strong id="next-rank">Script Kiddie</strong></span>
-                </div>
-                <p id="rank-description">You're just starting your cybersecurity journey. Keep learning!</p>
-            </div>
-
-            <div class="reset-section">
-                <button id="reset-btn" class="reset-btn">Reset Progress</button>
             </div>
         </div>
-<div class="quiz-explanation-footer">
-    <div class="explanation-container">
-        <h3>How Our Questions Are Generated</h3>
-        <p>All questions in this quiz were carefully crafted using AI (Mix of Claude.ai and Grok depending on usage limits) assistance with the following prompt template based on all the topics and subjects I have previously written about.:</p>
-        <p>Due to this, as I retake the test over and over - I will update the questions and answers to make more sense than what AI can provide. If you see something wrong, let me know.</p>
-        <pre class="prompt-template">
-Based on this cybersecurity related format please create reasonable questions that are hard to answer based on the following categories. 
-Only provide a question for each listed item, but ensure it's thorough enough to really test their knowledge on the subject. 
-Ensure each listed item is covered, All of the above can be a valid answer if the questions fit. 
-We can have many questions as long as they are relevant to the topic listed.
+
+        <div class="rank-info">
+            <h2>Your Security Ranking</h2>
+            <div class="rank-progress">
+                <div id="rank-progress-bar" class="rank-progress-bar" style="width: 0%"></div>
+            </div>
+            <div class="next-rank">
+                <span>Current: <strong id="current-rank">Newbie</strong></span>
+                <span>Next: <strong id="next-rank">Script Kiddie</strong></span>
+            </div>
+            <p id="rank-description">You're just starting your cybersecurity journey. Keep learning!</p>
+        </div>
+
+        <div class="reset-section">
+            <button id="reset-btn" class="reset-btn">Reset All Progress</button>
+        </div>
+
+        <div class="quiz-explanation-footer">
+            <div class="explanation-container">
+                <h3>About This Quiz</h3>
+                <p>This cybersecurity quiz features 38 specialized categories covering everything from basic concepts to
+                    advanced techniques. Each category focuses on a specific area of cybersecurity knowledge.</p>
+                <h4>Categories Include:</h4>
+                <div class="category-list">
+                    <ul>
+                        <li>Protecting Yourself First</li>
+                        <li>Common Cybersecurity Terms</li>
+                        <li>Understanding Windows & Linux</li>
+                        <li>Programming (Batch, PowerShell, Python)</li>
+                        <li>Cryptography & Hashing</li>
+                        <li>Web Security & Development</li>
+                        <li>Network Analysis & Scanning</li>
+                        <li>Pentesting Methodology</li>
+                        <li>And many more specialized topics</li>
+                    </ul>
+                </div>
+
+                <h4>Question Format</h4>
+                <pre class="prompt-template">
 [
     {
         "question": "String containing the actual question",
@@ -425,406 +103,17 @@ We can have many questions as long as they are relevant to the topic listed.
         ],
         "correctAnswer": Integer (index of the correct option, zero-based),
         "explanation": "String providing explanation of the correct answer",
-        "weight": Integer (weight/points assigned to this question value between 0 and 3)
+        "weight": Integer (weight/points assigned to this question value between 0 and 3),
+        "category": "String indicating which category this question belongs to"
     }
-]
-
-&lt;li&gt;Common Cybersecurity Terms
-        &lt;!-- Miscellaneous Terms --&gt;
-        &lt;li&gt;Miscellaneous Terms
-            &lt;ul&gt;
-                &lt;li&gt;Pwn&lt;/li&gt;
-                &lt;li&gt;1337 (Leet) Speak&lt;/li&gt;
-                &lt;li&gt;Malvertising&lt;/li&gt;
-                &lt;li&gt;Viruses&lt;/li&gt;
-                &lt;li&gt;Section on Example RATS (Back Orifice through Plugx etc)&lt;/li&gt;
-                &lt;li&gt;Understanding Firewalls, IDS and IPS&lt;/li&gt;
-                &lt;li&gt;MaaS, SaaS etc Backdoor Sales&lt;/li&gt;
-                &lt;li&gt;Planned Obsolesence&lt;/li&gt;
-                &lt;li&gt;EOL&lt;/li&gt;
-                &lt;li&gt;Case Sensitivity&lt;/li&gt;
-                &lt;li&gt;Qualatitive vs Quantitive&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/li&gt;
-    </pre>
-    </div>
-</div>
-
-
+]</pre>
+                <p>Questions are stored in separate JSON files for each category, making it easy to update and maintain
+                    the quiz content.</p>
+            </div>
+        </div>
     </div>
 
-    <script>
-    // Define the ranks
-    const ranks = [
-        { name: "Newbie", threshold: 0, description: "You're just starting your cybersecurity journey. Keep learning!" },
-        { name: "Script Kiddie", threshold: 0.2, description: "You're familiar with basic tools but need deeper understanding." },
-        { name: "Security Enthusiast", threshold: 0.4, description: "You're building good security knowledge. Keep practicing!" },
-        { name: "Security Analyst", threshold: 0.6, description: "You have solid security foundations and analytical skills." },
-        { name: "Security Expert", threshold: 0.75, description: "You have extensive knowledge across multiple security domains." },
-        { name: "Security Guru", threshold: 0.9, description: "You've mastered cybersecurity concepts. Few challenges can stump you!" }
-    ];
-
-    // Quiz state
-    const quizState = {
-        questions: [], // Will be loaded from questions.json
-        currentQuestionIndex: 0,
-        answeredQuestions: [],
-        score: 0,
-        totalPoints: 0,
-        maxPossiblePoints: 0,
-        selectedOption: null,
-        answered: false,
-        loading: true,
-        currentRank: ranks[0]
-    };
-
-    // DOM elements
-    const loadingElement = document.getElementById('loading');
-    const quizContainer = document.getElementById('quiz-container');
-    const questionElement = document.getElementById('question');
-    const optionsElement = document.getElementById('options');
-    const feedbackElement = document.getElementById('feedback');
-    const nextButton = document.getElementById('next-btn');
-    const resetButton = document.getElementById('reset-btn');
-    const progressStat = document.getElementById('progress-stat');
-    const scoreStat = document.getElementById('score-stat');
-    const rankBadge = document.getElementById('rank-badge');
-    const rankName = document.getElementById('rank-name');
-    const rankProgressBar = document.getElementById('rank-progress-bar');
-    const currentRankElement = document.getElementById('current-rank');
-    const nextRankElement = document.getElementById('next-rank');
-    const rankDescription = document.getElementById('rank-description');
-    const themeToggle = document.getElementById('theme-toggle');
-
-    // Theme toggle functionality
-    themeToggle.addEventListener('change', function () {
-        if (this.checked) {
-            document.body.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            document.body.removeAttribute('data-theme');
-            localStorage.setItem('theme', 'light');
-        }
-    });
-
-    // Load saved theme from localStorage, default to dark mode
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === null || savedTheme === 'dark') {
-        document.body.setAttribute('data-theme', 'dark');
-        themeToggle.checked = true;
-    } else if (savedTheme === 'light') {
-        document.body.removeAttribute('data-theme');
-        themeToggle.checked = false;
-    }
-
-    // Load questions from JSON
-    async function loadQuestions() {
-        try {
-            const response = await fetch('questions.json');
-            const data = await response.json();
-            quizState.questions = data;
-
-            // Calculate max possible points
-            quizState.maxPossiblePoints = quizState.questions.reduce((sum, question) => sum + question.weight, 0);
-
-            // FIXED: Only initialize the quiz AFTER questions are loaded
-            initializeQuiz();
-        } catch (error) {
-            console.error('Failed to load questions:', error);
-            loadingElement.innerHTML = `<p>Error loading quiz questions. Please try again later.</p>`;
-        }
-    }
-
-    // Initialize the quiz
-    function initializeQuiz() {
-        try {
-            // Load saved progress from localStorage
-            loadProgress();
-
-            // FIXED: Only display questions after they're loaded
-            if (quizState.questions && quizState.questions.length > 0) {
-                // Display the first question
-                displayQuestion();
-            } else {
-                throw new Error("Questions not loaded properly");
-            }
-
-            // Update statistics
-            updateStats();
-
-            // Update rank information
-            updateRank();
-
-            // FIXED: Removed redundant loadQuestions() call that was causing an infinite loop
-
-            // Hide loading spinner, show quiz
-            quizState.loading = false;
-            loadingElement.classList.add('hidden');
-            quizContainer.classList.remove('hidden');
-        } catch (error) {
-            console.error('Error initializing quiz:', error);
-            loadingElement.innerHTML = `<p>Error loading quiz: ${error.message}</p>`;
-        }
-    }
-
-    // Load saved progress from localStorage
-    function loadProgress() {
-        const savedProgress = localStorage.getItem('cybersecurityQuizProgress');
-        if (savedProgress) {
-            const progress = JSON.parse(savedProgress);
-            quizState.answeredQuestions = progress.answeredQuestions || [];
-            quizState.score = progress.score || 0;
-            quizState.totalPoints = progress.totalPoints || 0;
-            quizState.currentQuestionIndex = progress.currentQuestionIndex || 0;
-
-            // Ensure the current question index is valid
-            if (quizState.currentQuestionIndex >= quizState.questions.length) {
-                quizState.currentQuestionIndex = 0;
-            }
-        }
-    }
-
-    // Save progress to localStorage
-    function saveProgress() {
-        const progress = {
-            answeredQuestions: quizState.answeredQuestions,
-            score: quizState.score,
-            totalPoints: quizState.totalPoints,
-            currentQuestionIndex: quizState.currentQuestionIndex
-        };
-        localStorage.setItem('cybersecurityQuizProgress', JSON.stringify(progress));
-    }
-
-    function displayQuestion() {
-        // Check if questions exist before trying to display them
-        if (!quizState.questions || quizState.questions.length === 0) {
-            console.error('No questions available to display');
-            return;
-        }
-
-        // First, check if the current question has already been answered
-        const isAlreadyAnswered = quizState.answeredQuestions.some(
-            q => q.questionIndex === quizState.currentQuestionIndex
-        );
-
-        // If the question has already been answered, move to the next unanswered question
-        if (isAlreadyAnswered) {
-            // Find the next unanswered question
-            let foundUnanswered = false;
-            let tempIndex = quizState.currentQuestionIndex;
-
-            // Try to find an unanswered question by checking each question
-            for (let i = 0; i < quizState.questions.length; i++) {
-                tempIndex = (tempIndex + 1) % quizState.questions.length;
-
-                // Check if this question has been answered
-                if (!quizState.answeredQuestions.some(q => q.questionIndex === tempIndex)) {
-                    quizState.currentQuestionIndex = tempIndex;
-                    foundUnanswered = true;
-                    break;
-                }
-            }
-
-            // If all questions have been answered, show completion message
-            if (!foundUnanswered) {
-                questionElement.innerHTML = `<h2>Quiz Complete!</h2>
-                <p>You've answered all questions. Your final score is: ${quizState.score}/${quizState.questions.length}</p>
-                <p>Total points: ${quizState.totalPoints}/${quizState.maxPossiblePoints}</p>`;
-                optionsElement.innerHTML = '';
-                feedbackElement.style.display = 'none';
-                nextButton.disabled = true;
-                return;
-            }
-        }
-
-        const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
-
-        // Double-check that the current question exists
-        if (!currentQuestion) {
-            console.error('Current question is undefined', {
-                index: quizState.currentQuestionIndex,
-                totalQuestions: quizState.questions.length
-            });
-            return;
-        }
-
-        // Reset state for new question
-        quizState.selectedOption = null;
-        quizState.answered = false;
-        nextButton.disabled = true;
-        feedbackElement.style.display = 'none';
-        feedbackElement.classList.remove('correct', 'incorrect');
-
-        // Display question with weight indicator
-        questionElement.innerHTML = `
-        ${currentQuestion.question}
-        <span class="question-weight">Weight: ${currentQuestion.weight}</span>
-    `;
-
-        // Display options
-        optionsElement.innerHTML = '';
-        currentQuestion.options.forEach((option, index) => {
-            const optionElement = document.createElement('div');
-            optionElement.className = 'option';
-            optionElement.textContent = option;
-            optionElement.dataset.index = index;
-            optionElement.addEventListener('click', selectOption);
-            optionsElement.appendChild(optionElement);
-        });
-    }
-
-    // Handle option selection
-    function selectOption(event) {
-        if (quizState.answered) return;
-
-        const selectedIndex = parseInt(event.target.dataset.index);
-        const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
-
-        // Reset previously selected option
-        document.querySelectorAll('.option').forEach(opt => {
-            opt.classList.remove('selected');
-        });
-
-        // Mark selected option
-        event.target.classList.add('selected');
-        quizState.selectedOption = selectedIndex;
-
-        // Enable next button
-        nextButton.disabled = false;
-
-        // Check answer
-        const isCorrect = selectedIndex === currentQuestion.correctAnswer;
-
-        // Show feedback
-        feedbackElement.style.display = 'block';
-        if (isCorrect) {
-            feedbackElement.classList.add('correct');
-            feedbackElement.textContent = 'Correct! ' + (currentQuestion.explanation || '');
-            event.target.classList.add('correct');
-            quizState.totalPoints += currentQuestion.weight;
-        } else {
-            feedbackElement.classList.add('incorrect');
-            const correctOption = currentQuestion.options[currentQuestion.correctAnswer];
-            feedbackElement.textContent = `Incorrect. The correct answer is: "${correctOption}". ` +
-                (currentQuestion.explanation || '');
-            event.target.classList.add('incorrect');
-            document.querySelectorAll('.option')[currentQuestion.correctAnswer].classList.add('correct');
-        }
-
-        // Update state
-        quizState.answered = true;
-        quizState.answeredQuestions.push({
-            questionIndex: quizState.currentQuestionIndex,
-            isCorrect,
-            weight: currentQuestion.weight
-        });
-
-        if (isCorrect) {
-            quizState.score++;
-        }
-
-        // Update statistics
-        updateStats();
-
-        // Update rank
-        updateRank();
-
-        // Save progress
-        saveProgress();
-    }
-
-    // Move to the next question
-    function nextQuestion() {
-        if (quizState.answeredQuestions.length >= quizState.questions.length) {
-            alert("You've completed the quiz!");
-            return; // Prevent further looping
-        }
-
-        // Move to next unanswered question
-        quizState.currentQuestionIndex = (quizState.currentQuestionIndex + 1) % quizState.questions.length;
-        while (quizState.answeredQuestions.some(q => q.questionIndex === quizState.currentQuestionIndex)) {
-            quizState.currentQuestionIndex = (quizState.currentQuestionIndex + 1) % quizState.questions.length;
-        }
-
-        // Display the next question
-        displayQuestion();
-
-        // Save progress
-        saveProgress();
-    }
-
-    // Update statistics display
-    function updateStats() {
-        const totalQuestions = quizState.questions.length;
-        const answeredCount = quizState.answeredQuestions.length;
-
-        progressStat.textContent = `Progress: ${answeredCount}/${totalQuestions}`;
-        scoreStat.textContent = `Score: ${quizState.totalPoints}/${quizState.maxPossiblePoints}`;
-    }
-
-    // Update rank information
-    function updateRank() {
-        // Calculate percentage of max possible points
-        const percentComplete = quizState.maxPossiblePoints > 0 ?
-            quizState.totalPoints / quizState.maxPossiblePoints : 0;
-
-        // Determine current rank
-        let currentRank = ranks[0];
-        let nextRank = ranks[1];
-
-        for (let i = ranks.length - 1; i >= 0; i--) {
-            if (percentComplete >= ranks[i].threshold) {
-                currentRank = ranks[i];
-                nextRank = i < ranks.length - 1 ? ranks[i + 1] : ranks[i];
-                break;
-            }
-        }
-
-        // Update UI
-        rankName.textContent = currentRank.name;
-        currentRankElement.textContent = currentRank.name;
-
-        // If user has reached top rank, show that instead of "next rank"
-        if (currentRank === ranks[ranks.length - 1]) {
-            nextRankElement.textContent = "Maximum Rank Achieved!";
-            rankProgressBar.style.width = "100%";
-        } else {
-            nextRankElement.textContent = nextRank.name;
-
-            // Calculate progress to next rank
-            const currentThreshold = currentRank.threshold;
-            const nextThreshold = nextRank.threshold;
-            const progress = (percentComplete - currentThreshold) / (nextThreshold - currentThreshold) * 100;
-            rankProgressBar.style.width = `${Math.min(progress, 100)}%`;
-        }
-
-        rankDescription.textContent = currentRank.description;
-        quizState.currentRank = currentRank;
-    }
-
-    // Reset quiz progress
-    function resetQuiz() {
-        if (confirm('Are you sure you want to reset your quiz progress? This cannot be undone.')) {
-            localStorage.removeItem('cybersecurityQuizProgress');
-            quizState.currentQuestionIndex = 0;
-            quizState.answeredQuestions = [];
-            quizState.score = 0;
-            quizState.totalPoints = 0;
-            displayQuestion();
-            updateStats();
-            updateRank();
-        }
-    }
-
-    // Event listeners
-    nextButton.addEventListener('click', nextQuestion);
-    resetButton.addEventListener('click', resetQuiz);
-
-    // FIXED: Changed event listener to call loadQuestions first (which will then call initializeQuiz)
-    document.addEventListener('DOMContentLoaded', loadQuestions);
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
